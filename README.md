@@ -5,7 +5,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 # Introduccion
 
 - [Definicion Metodos Numericos y para que sirven](#definicion-metodos-numericos-y-para-que-sirven)
-- [Funcion](#funcion)
+- [Funcion](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/aafa8c9455a4b16a326091e0bd6f7e6498447d82/Que%20es%20una%20funcion?plain=1)
 
 ---
 
