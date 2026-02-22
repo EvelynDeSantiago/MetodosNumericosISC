@@ -1,17 +1,16 @@
-# MÈtodos NumÈricos ISC
+Ôªø# M√©todos Num√©ricos ISC
 
-## IntroducciÛn
+## Introducci√≥n
 
-Los mÈtodos numÈricos son tÈcnicas matem·ticas utilizadas para obtener soluciones aproximadas a problemas que no pueden resolverse de forma exacta mediante mÈtodos algebraicos tradicionales.
+Los m√©todos num√©ricos son t√©cnicas matem√°ticas utilizadas para obtener soluciones aproximadas a problemas que no pueden resolverse de forma exacta mediante m√©todos algebraicos tradicionales.
 
-En este repositorio se desarrollan diferentes algoritmos aplicados a la materia de MÈtodos NumÈricos de la carrera de IngenierÌa en Sistemas Computacionales, implementados en el lenguaje de programaciÛn C#.
+En este repositorio se desarrollan diferentes algoritmos aplicados a la materia de M√©todos Num√©ricos de la carrera de Ingenier√≠a en Sistemas Computacionales, implementados en el lenguaje de programaci√≥n C#.
 
-El objetivo principal es comprender y aplicar mÈtodos como:
+El objetivo principal es comprender y aplicar m√©todos como:
 
-- MÈtodo de BisecciÛn
-- MÈtodo de Newton-Raphson
-- MÈtodo de Secante
-- MÈtodos de interpolaciÛn
-- MÈtodos para resolver sistemas de ecuaciones
-
-Estos programas permiten analizar el comportamiento de funciones matem·ticas y obtener soluciones aproximadas mediante procedimientos computacionales.
+- M√©todo de Bisecci√≥n
+- M√©todo de Newton-Raphson
+- M√©todo de Secante
+- M√©todos de interpolaci√≥n
+- M√©todos para resolver sistemas de ecuaciones
+- Estos programas permiten analizar el comportamiento de funciones matem√°ticas y obtener soluciones aproximadas mediante procedimientos computacionales.n analizar el comportamiento de funciones matem√°ticas y obtener soluciones aproximadas mediante procedimientos computacionales.oritmos y c√°lculos repetitivos (iteraciones) que permiten encontrar resultados con un margen de error controlado. Son fundamentales en √°reas como ingenier√≠a, f√≠sica, econom√≠a y programaci√≥n, ya que muchos problemas reales requieren soluciones aproximadas obtenidas con ayuda de computadoras.
