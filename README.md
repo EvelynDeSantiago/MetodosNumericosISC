@@ -13,7 +13,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 - [Definicion Metodos de solucion de ecuaciones](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/82575522a006890075b405764c6afcb00b0faa83/M%C3%A9todos%20de%20soluci%C3%B3n%20de%20problemas%20de%20interpolaci%C3%B3n?plain=1)
 
-1. [Metodo de biseccion](#metodo-de-biseccion)
+1. [Metodo de biseccion](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/a9034fd96175c1c381c26a1257264b78f3047831/Bisecci%C3%B3n?plain=1)
    - [Ejemplos Metodo de biseccion](#ejemplos-metodo-de-biseccion)
 
 2. [Regla Falsa](#regla-falsa)
