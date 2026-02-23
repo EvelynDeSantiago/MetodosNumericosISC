@@ -11,7 +11,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 # Tema 2
 
-- [Definicion Metodos de solucion de ecuaciones](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/0e625963abda5214e9c2ffcd049b0fd112a9dd8f/M%C3%A9todos%20de%20soluci%C3%B3n%20de%20problemas%20de%20interpolaci%C3%B3n?plain=1)
+- [Definicion Metodos de solucion de ecuaciones](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/82575522a006890075b405764c6afcb00b0faa83/M%C3%A9todos%20de%20soluci%C3%B3n%20de%20problemas%20de%20interpolaci%C3%B3n?plain=1)
 
 1. [Metodo de biseccion](#metodo-de-biseccion)
    - [Ejemplos Metodo de biseccion](#ejemplos-metodo-de-biseccion)
