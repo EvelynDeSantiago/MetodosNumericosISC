@@ -1,0 +1,59 @@
+using System;
+
+namespace Ejercicio2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Definir la función f(x) = sin(x) - x/2
+            Func<double, double> function = x => Math.Sin(x) - x / 2;
+
+            double a = 0;   // Límite inferior
+            double b = 3;   // Límite superior
+            double epsilon = 0.0001;  // Precisión deseada
+
+            double root = Bisection(function, a, b, epsilon);
+
+            Console.WriteLine("La raíz aproximada es: " + root);
+            Console.ReadLine();
+        }
+
+        static double Bisection(Func<double, double> function, double a, double b, double epsilon)
+        {
+            // Verificar si el intervalo encierra una raíz
+            if (function(a) * function(b) > 0)
+            {
+                throw new ArgumentException("La función no cambia de signo en el intervalo dado.");
+            }
+
+            while ((b - a) >= epsilon)
+            {
+                // Punto medio
+                double c = (a + b) / 2;
+                double fc = function(c);
+
+                // Si es suficientemente cercano a 0
+                if (Math.Abs(fc) < epsilon)
+                {
+                    return c;
+                }
+
+                // Cambio de signo
+                if (fc * function(a) < 0)
+                {
+                    b = c;
+                }
+                else
+                {
+                    a = c;
+                }
+            }
+
+            // Mejor aproximación
+            return (a + b) / 2;
+        }
+    }
+}
+
+------Resultado en pantalla: La raíz aproximada es: 1.8955078125  
