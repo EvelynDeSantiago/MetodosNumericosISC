@@ -1,11 +1,14 @@
---------------métodos de solución de problemas de interpolación-------------------
+**Métodos de solución de problemas de interpolación**
+
 Hay varios métodos para resolver problemas de interpolación, que es el proceso de estimar valores desconocidos entre datos conocidos. 
 Aquí hay algunos de los métodos más comunes:
-Interpolación lineal: Es el método más simple y consiste en conectar los puntos conocidos con líneas rectas. Si tienes dos puntos conocidos, 
+
+--Interpolación lineal: Es el método más simple y consiste en conectar los puntos conocidos con líneas rectas. Si tienes dos puntos conocidos, 
 puedes encontrar el valor intermedio de manera lineal. Este método es rápido y fácil de implementar, pero puede no ser muy preciso si los datos no están bien distribuidos.
 Interpolación polinómica: Este método implica encontrar un polinomio que pase exactamente por todos los puntos dados. Algunos de los métodos más populares son el método de
 Lagrange y el método de interpolación de Newton. Estos métodos suelen ser más precisos que la interpolación lineal, especialmente si se usan polinomios de grado más alto.
-Interpolación de spline: Los splines son curvas suaves que pasan por los puntos de datos. Se construyen mediante la unión de varias funciones polinómicas más pequeñas a 
+
+--Interpolación de spline: Los splines son curvas suaves que pasan por los puntos de datos. Se construyen mediante la unión de varias funciones polinómicas más pequeñas a 
 lo largo de intervalos específicos, de modo que la curva resultante sea suave y tenga buenas propiedades de interpolación. Los splines cúbicos son los más comunes y se
 utilizan en una variedad de aplicaciones. Interpolación de Fourier: Este método se utiliza específicamente para datos periódicos o datos que pueden ser considerados como 
 periódicos. Utiliza una serie de funciones sinusoidales para aproximar la función subyacente. Es especialmente útil en el procesamiento de señales y en problemas 
