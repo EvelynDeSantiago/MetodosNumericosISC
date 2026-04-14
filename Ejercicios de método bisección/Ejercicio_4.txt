@@ -1,0 +1,57 @@
+using System;
+
+class Ejercicio4
+{
+    static void Main(string[] args)
+    {
+        Func<double, double> function = x => Math.Exp(x) - 2;
+
+        double a = 0; // Límite inferior
+        double b = 3; // Límite superior
+
+        // Precisión deseada
+        double epsilon = 0.0001;
+
+        double root = Bisection(function, a, b, epsilon);
+
+        Console.WriteLine("La raíz aproximada es: " + root);
+    }
+
+    public static double Bisection(Func<double, double> function, double a, double b, double epsilon)
+    {
+        // Verificar cambio de signo
+        if (function(a) * function(b) > 0)
+        {
+            throw new ArgumentException("La función no cambia de signo en el intervalo dado.");
+        }
+
+        while ((b - a) >= epsilon)
+        {
+            // Punto medio
+            double c = (a + b) / 2;
+
+            double fc = function(c);
+
+            // Si está cerca de cero
+            if (Math.Abs(fc) < epsilon)
+            {
+                return c;
+            }
+
+            // Ajustar intervalo
+            if (fc * function(a) < 0)
+            {
+                b = c;
+            }
+            else
+            {
+                a = c;
+            }
+        }
+
+        // Mejor aproximación
+        return (a + b) / 2;
+    }
+}
+
+-------Resultado en pantalla: La ra?z aproximada es: 0.693145751953125  

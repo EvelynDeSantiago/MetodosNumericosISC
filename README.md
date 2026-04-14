@@ -26,3 +26,17 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
    - [Ejemplos Metodo de la Secante](#ejemplos-metodo-de-la-secante)
 
 ---
+
+## Tema 3 
+- [Definición de Sistema de ecuaciones lineales]() 
+1. [Eliminación Gaussiana]() 
+      - [Ejemplos Eliminación Gaussiana]() 
+     
+2. [Método de Gauss-Jordan]() 
+      - [Ejemplo Método de Gauss-Jordan]() 
+      
+3. [Método de Gauss-Seidel]() 
+      - [Ejemplos Método de Gauss-Seidel]()  
+      
+4. [Método de Jacobi]() 
+      - [Ejemplos Método de Jacobi]()
