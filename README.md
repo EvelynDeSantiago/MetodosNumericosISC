@@ -20,7 +20,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
    - [Ejemplos Regla Falsa](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/73583d87591dd0b604f2e6567dcbcd7d5361acf7/Ejercicios%20de%20Regla%20falsa?plain=1)
 
 3. [Metodo Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/23edc3a100c5ffbaf42f04dee3bc9850cf70feaa/M%C3%A9todo%20de%20Newton?plain=1)
-   - [Ejemplos Metodo Newton](#ejemplos-metodo-newton)
+   - [Ejemplos Metodo Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/015ac3bd50cb14121e1cb205bea591de62d4d7fe/Ejercicios%20del%20m%C3%A9todo%20newton?plain=1)
 
 4. [Metodo de la Secante](#metodo-de-la-secante)
    - [Ejemplos Metodo de la Secante](#ejemplos-metodo-de-la-secante)

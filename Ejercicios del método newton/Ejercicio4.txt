@@ -39,4 +39,4 @@ class Ejercicio4
     }
 }
 
--------Raíz aproximada: 0.619061283355313
+------Raiz aproximada: 0.619061283355313
