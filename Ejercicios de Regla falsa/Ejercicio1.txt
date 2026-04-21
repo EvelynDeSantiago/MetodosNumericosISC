@@ -1,0 +1,60 @@
+using System;
+
+class Ejercicio1
+{
+    public static double Funcion(double x)
+    {
+        return Math.Pow(x, 2) - 4;
+    }
+
+    public static double ReglaFalsa(double a, double b, Func<double, double> f, double errorTolerado)
+    {
+        double c = 0;
+        double fa = f(a);
+        double fb = f(b);
+        double fc = 0;
+        double error = 0;
+
+        if (fa * fb > 0)
+        {
+            Console.WriteLine("No hay cambio de signo en el intervalo dado.");
+            return double.NaN;
+        }
+
+        do
+        {
+            c = (a * fb - b * fa) / (fb - fa);
+            fc = f(c);
+
+            if (fa * fc < 0)
+            {
+                b = c;
+                fb = fc;
+            }
+            else
+            {
+                a = c;
+                fa = fc;
+            }
+
+            error = Math.Abs(fc);
+
+        } while (error >= errorTolerado);
+
+        return c;
+    }
+
+    static void Main()
+    {
+        double a = 1;
+        double b = 3;
+        double error = 0.0001;
+
+        double raiz = ReglaFalsa(a, b, Funcion, error);
+
+        if (!double.IsNaN(raiz))
+            Console.WriteLine("Raíz aproximada: " + raiz);
+    }
+}
+
+----------------Raíz aproximada: 1.99998293340615
