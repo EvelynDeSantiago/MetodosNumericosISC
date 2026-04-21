@@ -33,7 +33,7 @@ metodo_de_newton:
         - continuar_iterando_o_finalizar: "Dependiendo del criterio de convergencia y max_iter"
 -----------------------------------------------------------------------------------------------
 
----IMPLEMENTACIÓN EN C#----
+---IMPLEMENTACIÓN EN JAVA----
 import java.util.Scanner;
 import java.util.function.Function;
 
