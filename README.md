@@ -16,7 +16,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 1. [Metodo de biseccion](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/a9034fd96175c1c381c26a1257264b78f3047831/Bisecci%C3%B3n?plain=1)
    - [Ejemplos Metodo de biseccion](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/ed10717e84bd39b3e7a1632ebabf38400691fadb/Ejercicios%20de%20m%C3%A9todo%20bisecci%C3%B3n?plain=1)
 
-2. [Regla Falsa](#regla-falsa)
+2. [Regla Falsa](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/de66c8754049a28d25e3bc8d2387083501b75d47/Regla%20falsa?plain=1)
    - [Ejemplos Regla Falsa](#ejemplos-regla-falsa)
 
 3. [Metodo Newton](#metodo-newton)
