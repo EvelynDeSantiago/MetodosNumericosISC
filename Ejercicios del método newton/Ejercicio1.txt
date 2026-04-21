@@ -1,0 +1,42 @@
+using System;
+
+class Ejercicio1
+{
+    public static double Funcion(double x)
+    {
+        return Math.Pow(x, 2) - 4;
+    }
+
+    public static double Derivada(double x)
+    {
+        return 2 * x;
+    }
+
+    public static double Newton(double x0, Func<double, double> f, Func<double, double> df, double errorTolerado)
+    {
+        double x1;
+        double error;
+
+        do
+        {
+            x1 = x0 - f(x0) / df(x0);
+            error = Math.Abs(x1 - x0);
+            x0 = x1;
+
+        } while (error >= errorTolerado);
+
+        return x1;
+    }
+
+    static void Main()
+    {
+        double x0 = 3;
+        double error = 0.0001;
+
+        double raiz = Newton(x0, Funcion, Derivada, error);
+
+        Console.WriteLine("Raíz aproximada: " + raiz);
+    }
+}
+
+-----------Raiz aproximada: 2.00000000002621
