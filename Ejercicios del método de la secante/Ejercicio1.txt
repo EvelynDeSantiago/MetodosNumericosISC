@@ -1,0 +1,58 @@
+using System;
+
+namespace Ejercicio1
+{
+    class Program
+    {
+        // Método para encontrar la raíz usando el método de la secante
+        public static double FindRoot(Func<double, double> function,
+                                      double x0,
+                                      double x1,
+                                      double tolerance,
+                                      int maxIterations)
+        {
+            double x2 = 0;
+            int iterations = 0;
+
+            do
+            {
+                x2 = x1 - ((function(x1) * (x1 - x0)) /
+                      (function(x1) - function(x0)));
+
+                x0 = x1;
+                x1 = x2;
+
+                iterations++;
+
+            } while (Math.Abs(function(x2)) > tolerance &&
+                     iterations < maxIterations);
+
+            return x2;
+        }
+
+        static void Main(string[] args)
+        {
+            // Definir la función f(x) = x² - x
+            Func<double, double> function = x => x * x - x;
+
+            // Valores iniciales
+            double x0 = 0.5;
+            double x1 = 1.0;
+
+            // Tolerancia y máximo de iteraciones
+            double tolerance = 0.0001;
+            int maxIterations = 1000;
+
+            // Encontrar la raíz
+            double root = FindRoot(function, x0, x1, tolerance, maxIterations);
+
+            // Mostrar resultado
+            Console.WriteLine("Raíz encontrada: " + root);
+
+            // Pausar consola
+            Console.ReadKey();
+        }
+    }
+}
+
+------Resultado en pantalla: Raíz encontrada: 1.0
