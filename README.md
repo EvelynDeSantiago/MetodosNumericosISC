@@ -39,7 +39,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
       - [Ejemplos Método de Gauss-Seidel](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/14ffae11234af5cde088611649e285f1378278ea/Ejercicios%20metodo%20gauss-seidel?plain=1)  
       
 4. [Método de Jacobi](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e1108059f0558c745e7c12fb6c9adb9f1c248314/M%C3%A9todo%20de%20jacobi?plain=1) 
-      - [Ejemplos Método de Jacobi](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/a5bc232590345e06002cd4577c5efe8fb3d91b6f/Ejercicios%20del%20Metodo%20de%20Jacobi?plain=1)
+      - [Ejemplos Método de Jacobi](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d8712074b7e97af6cebf3484e1af7493f7d7dde5/Ejercicios%20del%20Metodo%20de%20Jacobi?plain=1)
 
 
  ---
