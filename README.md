@@ -35,7 +35,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 2. [Método de Gauss-Jordan](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/75ea4cbb28c53c8217814a7bb06c791ed4c06956/M%C3%A9todo%20Gasus_Jordan?plain=1) 
       - [Ejemplo Método de Gauss-Jordan](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/af7d2bf5fccef5c8ec1ba2c47630ce8862e8507a/Ejercicios%20metodo%20gauss-jordan?plain=1) 
       
-3. [Método de Gauss-Seidel]() 
+3. [Método de Gauss-Seidel](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/df77d0f3c22eb25b1c1c12f8f88f2c371296c568/M%C3%A9todo%20de%20Gauss_Seidei?plain=1) 
       - [Ejemplos Método de Gauss-Seidel]()  
       
 4. [Método de Jacobi]() 
