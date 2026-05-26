@@ -1,0 +1,158 @@
+﻿Método de Gauss-Seidel
+
+El método de Gauss-Seidel es una técnica iterativa utilizada para obtener soluciones aproximadas de sistemas de ecuaciones lineales.
+A diferencia de otros métodos iterativos, este procedimiento actualiza inmediatamente los valores calculados durante cada iteración, lo que generalmente permite alcanzar la convergencia más rápidamente.
+
+El método comienza con una aproximación inicial y, posteriormente, mejora los valores de las incógnitas de manera sucesiva hasta alcanzar una precisión determinada.
+
+----------------------------------------------------------------------------------------------------------------
+
+Funcionamiento del Método
+
+El procedimiento consiste en despejar cada incógnita de las ecuaciones del sistema y calcular nuevos valores utilizando los resultados más recientes obtenidos en la misma iteración.
+
+----------------------------------------------------------------------------------------------------------------
+
+Pasos del Algoritmo
+1. Inicialización
+
+Se define un vector inicial de aproximaciones, normalmente utilizando ceros o valores arbitrarios.
+
+2. Actualización de variables
+
+Cada incógnita se recalcula utilizando los valores más recientes disponibles.
+
+3. Verificación de error
+
+Se compara la diferencia entre la iteración actual y la anterior.
+
+4. Condición de parada
+
+El proceso continúa hasta que:
+
+el error sea menor que la tolerancia establecida, o
+se alcance el número máximo de iteraciones.
+
+----------------------------------------------------------------------------------------------------------------
+
+Condiciones de Convergencia
+
+El método suele converger cuando:
+
+la matriz es diagonalmente dominante, o
+la matriz es simétrica y definida positiva.
+
+En caso contrario, la convergencia no está garantizada.
+
+-----------------------------------------------------------------------------------------------------------------
+
+Implementación en Java
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Tamaño del sistema
+        System.out.print("Ingrese el tamaño de la matriz: ");
+        int n = scanner.nextInt();
+
+        // Declaración de matriz y vector
+        double[][] A = new double[n][n];
+        double[] b = new double[n];
+
+        // Lectura de la matriz
+        System.out.println("Ingrese los valores de la matriz A:");
+
+        for (int i = 0; i < n; i++) {
+
+            for (int j = 0; j < n; j++) {
+
+                System.out.print("A[" + i + "][" + j + "] = ");
+                A[i][j] = scanner.nextDouble();
+            }
+        }
+
+        // Lectura del vector independiente
+        System.out.println("Ingrese los valores del vector b:");
+
+        for (int i = 0; i < n; i++) {
+
+            System.out.print("b[" + i + "] = ");
+            b[i] = scanner.nextDouble();
+        }
+
+        // Resolver sistema
+        double[] resultado = gaussSeidel(A, b);
+
+        // Mostrar resultados
+        System.out.println("Resultado aproximado:");
+
+        for (int i = 0; i < resultado.length; i++) {
+
+            System.out.printf("x[%d] = %.4f\n", i, resultado[i]);
+        }
+
+        scanner.close();
+    }
+
+    public static double[] gaussSeidel(double[][] A, double[] b) {
+
+        int n = b.length;
+
+        double[] x = new double[n];
+        double[] anterior = new double[n];
+
+        // Inicialización
+        for (int i = 0; i < n; i++) {
+
+            x[i] = 0;
+        }
+
+        while (true) {
+
+            // Guardar valores anteriores
+            System.arraycopy(x, 0, anterior, 0, n);
+
+            // Nueva aproximación
+            for (int i = 0; i < n; i++) {
+
+                double suma = 0;
+
+                for (int j = 0; j < n; j++) {
+
+                    if (j != i) {
+
+                        suma += A[i][j] * x[j];
+                    }
+                }
+
+                x[i] = (b[i] - suma) / A[i][i];
+            }
+
+            // Cálculo del error
+            double errorMaximo = 0;
+
+            for (int i = 0; i < n; i++) {
+
+                double diferencia = Math.abs(x[i] - anterior[i]);
+
+                if (diferencia > errorMaximo) {
+
+                    errorMaximo = diferencia;
+                }
+            }
+
+            // Verificar convergencia
+            if (errorMaximo < 0.0001) {
+
+                break;
+            }
+        }
+
+        return x;
+    }
+}
