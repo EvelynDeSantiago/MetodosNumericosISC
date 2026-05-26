@@ -58,7 +58,7 @@ class Ejercicio5
     }
 }
 
-------Resultado del sistema de ecuaciones:
+--------Resultado del sistema de ecuaciones:
 La solución aproximada del sistema de ecuaciones es:
 x[0] = 1.9298
 x[1] = 1.4035
