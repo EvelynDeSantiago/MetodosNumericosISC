@@ -1,125 +1,141 @@
-﻿---Método de Jacobi:
-Los métodos iterativos de Jacobi y Gauss-Seidel son los procesos de aproximaciones sucesivas para resolver sistemas de ecuaciones lineales 
-compatibles determinados.Ambos requieren de la verificación de un criterio de convergencia comúnmente conocido como diagonal pesada.
+﻿Método de Jacobi
 
--------Algoritmo----------//Método de Jacobi
-metodo_jacobi:
-  descripcion: "Algoritmo para encontrar soluciones aproximadas de un sistema de ecuaciones lineales"
-  entrada:
-    A: 
-      tipo: matriz
-      descripcion: "Matriz de coeficientes del sistema de ecuaciones"
-    b:
-      tipo: vector
-      descripcion: "Vector de términos constantes"
-    x0:
-      tipo: vector
-      descripcion: "Aproximación inicial de la solución"
-    tol:
-      tipo: float
-      descripcion: "Tolerancia para el criterio de convergencia"
-    max_iter:
-      tipo: int
-      descripcion: "Número máximo de iteraciones"
-  salida:
-    x:
-      tipo: vector
-      descripcion: "Solución aproximada del sistema de ecuaciones"
-    iteraciones:
-      tipo: int
-      descripcion: "Número de iteraciones realizadas"
-  algoritmo: |
-    función jacobi(A, b, x0, tol, max_iter):
-      n = tamaño de A[0]  # Número de ecuaciones/sistema de ecuaciones
+El método de Jacobi es una técnica iterativa utilizada para obtener soluciones aproximadas de sistemas de ecuaciones lineales.
+Este procedimiento pertenece a los métodos numéricos de aproximaciones sucesivas y trabaja calculando nuevos valores para las incógnitas a partir de los resultados obtenidos en la iteración anterior.
 
-      x = copiar(x0)  # Inicializar el vector solución
-      x_nuevo = crear vector de longitud n
-      iteraciones = 0
+A diferencia del método de Gauss-Seidel, el método de Jacobi actualiza todas las variables al mismo tiempo una vez terminada cada iteración.
 
-      mientras iteraciones < max_iter:
-        para i de 0 a n-1:
-          suma = 0
-          para j de 0 a n-1:
-            si j ≠ i:
-              suma += A[i][j] * x[j]
-          x_nuevo[i] = (b[i] - suma) / A[i][i]
+Para que el método converja correctamente, generalmente se recomienda que la matriz de coeficientes sea diagonalmente dominante.
 
-        si norma_infinita(x_nuevo - x) < tol:
-          devolver x_nuevo, iteraciones
+------------------------------------------------------------------------------------------------------------------------------------
 
-        x = copiar(x_nuevo)
-        iteraciones += 1
+Funcionamiento del Método
 
-      devolver x, iteraciones
----------------------------------------------------------------------------------------
+El método despeja cada variable del sistema de ecuaciones y calcula una nueva aproximación utilizando los valores anteriores.
 
----IMPLEMENTACIÓN EN JAVA-----
+------------------------------------------------------------------------------------------------------------------------------------
+
+Pasos del Algoritmo
+1. Inicialización
+
+Se define un vector inicial con valores arbitrarios o ceros.
+
+2. Cálculo de nuevas aproximaciones
+
+Cada variable se calcula utilizando únicamente los valores de la iteración anterior.
+
+3. Evaluación del error
+
+Se compara la diferencia entre las soluciones consecutivas.
+
+4. Repetición del proceso
+
+Las iteraciones continúan hasta alcanzar:
+
+una tolerancia establecida, o
+el número máximo de iteraciones.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Condición de Convergencia
+
+El método suele converger cuando:
+
+la matriz es diagonalmente dominante, o
+el sistema cumple ciertas propiedades numéricas favorables.
+
+Si estas condiciones no se cumplen, las aproximaciones pueden divergir.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Implementación en Java
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        // Pedir dimensiones de la matriz
-        System.out.println("Ingrese el tamaño de la matriz (n x n):");
+        // Tamaño de la matriz
+        System.out.print("Ingrese el tamaño de la matriz: ");
         int n = scanner.nextInt();
 
-        // Pedir matriz de coeficientes
-        System.out.println("Ingrese la matriz de coeficientes A (una fila a la vez):");
+        // Declaración de matriz y vector
         double[][] A = new double[n][n];
+        double[] b = new double[n];
+
+        // Lectura de la matriz
+        System.out.println("Ingrese los valores de la matriz A:");
+
         for (int i = 0; i < n; i++) {
+
             for (int j = 0; j < n; j++) {
+
                 A[i][j] = scanner.nextDouble();
             }
         }
 
-        // Pedir vector de términos constantes
-        System.out.println("Ingrese el vector de términos constantes b:");
-        double[] b = new double[n];
+        // Lectura del vector independiente
+        System.out.println("Ingrese los valores del vector b:");
+
         for (int i = 0; i < n; i++) {
+
             b[i] = scanner.nextDouble();
         }
 
-        // Calcular solución utilizando el método de Jacobi
+        // Resolver sistema
         double[] solucion = jacobi(A, b);
 
-        // Mostrar resultado
-        System.out.println("La solución aproximada del sistema de ecuaciones es:");
-        for (int i = 0; i < n; i++) {
+        // Mostrar resultados
+        System.out.println("Solución aproximada:");
+
+        for (int i = 0; i < solucion.length; i++) {
+
             System.out.println("x[" + i + "] = " + solucion[i]);
         }
+
+        scanner.close();
     }
 
     public static double[] jacobi(double[][] A, double[] b) {
+
         int n = A.length;
-        double[] x0 = new double[n];
+
+        double[] xAnterior = new double[n];
         double[] xNuevo = new double[n];
 
-        // Inicializar x0 con ceros
+        // Inicializar vector en cero
         for (int i = 0; i < n; i++) {
-            x0[i] = 0.0;
+
+            xAnterior[i] = 0;
         }
 
-        // Realizar un número fijo de iteraciones (en este caso, 50)
-        for (int k = 0; k < 50; k++) {
-            // Calcular nuevo valor de x
+        // Número de iteraciones
+        for (int iteracion = 0; iteracion < 50; iteracion++) {
+
             for (int i = 0; i < n; i++) {
-                double suma = 0.0;
+
+                double suma = 0;
+
                 for (int j = 0; j < n; j++) {
+
                     if (j != i) {
-                        suma += A[i][j] * x0[j];
+
+                        suma += A[i][j] * xAnterior[j];
                     }
                 }
+
                 xNuevo[i] = (b[i] - suma) / A[i][i];
             }
 
-            // Actualizar x0
+            // Actualizar valores
             for (int i = 0; i < n; i++) {
-                x0[i] = xNuevo[i];
+
+                xAnterior[i] = xNuevo[i];
             }
         }
 
-        return x0;
+        return xNuevo;
     }
 }
-------------------------------------------------------------------------------------------
