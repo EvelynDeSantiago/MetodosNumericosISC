@@ -53,4 +53,4 @@ class Ejercicio4
     }
 }
 
---------Resultado de pantalla: Raíz encontrada: 6.55743852099760
+--------Resultado de pantalla: Raíz encontrada: 6.55743852099769
