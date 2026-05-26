@@ -40,3 +40,39 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
       
 4. [Método de Jacobi]() 
       - [Ejemplos Método de Jacobi]()
+
+
+ ---
+
+ ## Tema 4 
+1. [Método de trapecio]() 
+      - [Ejemplos Método de trapecio]() 
+2. [Método de Simpson]() 
+      - [Ejemplos Método de Simpson]() 
+3. [Método de la Cuadratura Gaussiana]()  
+      - [Ejemplos Método de la Cuadratura Gaussiana]()
+
+---
+
+## Tema 5
+- [Métodos de solución de problemas de interpolación]() 
+1. [Interpolación Lineal]() 
+      - [Ejemplo Interpolción Lineal]()
+2. [Interpolción Cuadrática]()
+3. [Interpolción Newton]()
+      - [Ejemplo Interpolción Newton]()
+4. [Interpolción Lagrange]()
+      - [Ejemplo Interpolción Lagrange]()
+ 
+ ---
+
+## Tema 6
+- [Solución de ecuaciones diferenciales]() 
+1. [Métodos de un paso]() 
+      - [Ejemplo Métodos de un paso]()
+2. [Método de pasos múltiples]() 
+      - [EjemploMétodo de pasos múltiples]()
+
+
+
+

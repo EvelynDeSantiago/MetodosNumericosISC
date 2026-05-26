@@ -1,0 +1,97 @@
+using System;
+
+class GaussianElimination
+{
+    // Método para resolver el sistema
+    public static double[] Resolver(double[][] A, double[] b)
+    {
+        int n = A.Length;
+
+        // Eliminación hacia adelante
+        for (int k = 0; k < n - 1; k++)
+        {
+            for (int i = k + 1; i < n; i++)
+            {
+                double factor = A[i][k] / A[k][k];
+
+                for (int j = k; j < n; j++)
+                {
+                    A[i][j] = A[i][j] - factor * A[k][j];
+                }
+
+                b[i] = b[i] - factor * b[k];
+            }
+        }
+
+        // Sustitución hacia atrás
+        double[] x = new double[n];
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            double suma = 0;
+
+            for (int j = i + 1; j < n; j++)
+            {
+                suma += A[i][j] * x[j];
+            }
+
+            x[i] = (b[i] - suma) / A[i][i];
+        }
+
+        return x;
+    }
+
+    static void Main(string[] args)
+    {
+        Console.Write("Ingrese el tamaño de la matriz: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        double[][] A = new double[n][];
+        double[] b = new double[n];
+
+        // Crear matriz
+        for (int i = 0; i < n; i++)
+        {
+            A[i] = new double[n];
+        }
+
+        // Leer matriz A
+        Console.WriteLine("Ingrese los valores de la matriz A:");
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                Console.Write("A[" + i + "][" + j + "] = ");
+                A[i][j] = Convert.ToDouble(Console.ReadLine());
+            }
+        }
+
+        // Leer vector b
+        Console.WriteLine("Ingrese los valores del vector b:");
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write("b[" + i + "] = ");
+            b[i] = Convert.ToDouble(Console.ReadLine());
+        }
+
+        // Resolver sistema
+        double[] resultado = Resolver(A, b);
+
+        // Mostrar resultados
+        Console.WriteLine("----------Resultado del sistema de ecuaciones:");
+        Console.WriteLine("Solución del sistema de ecuaciones:");
+
+        for (int i = 0; i < resultado.Length; i++)
+        {
+            Console.WriteLine("x[" + i + "] = " + resultado[i]);
+        }
+    }
+}
+
+----------Resultado del sistema de ecuaciones:
+Solución del sistema de ecuaciones:
+x[0] = 1.0000000000000007
+x[1] = 2.0000000000000004
+x[2] = 1.9999999999999993
