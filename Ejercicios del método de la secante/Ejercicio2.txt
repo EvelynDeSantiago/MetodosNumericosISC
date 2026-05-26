@@ -55,4 +55,4 @@ namespace Ejercicio2
     }
 }
 
-------Resultado en pantalla: Raíz encontrada: 2.094551474105819
+------Resultado en pantalla: Raíz encontrada: 2.09455147410581
