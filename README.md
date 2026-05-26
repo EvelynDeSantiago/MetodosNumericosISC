@@ -47,9 +47,11 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
  ## Tema 4 
 1. [Método de trapecio]() 
       - [Ejemplos Método de trapecio]() 
-2. [Método de Simpson]() 
+
+1. 2. [Método de Simpson]() 
       - [Ejemplos Método de Simpson]() 
-3. [Método de la Cuadratura Gaussiana]()  
+
+1. 3. [Método de la Cuadratura Gaussiana]()  
       - [Ejemplos Método de la Cuadratura Gaussiana]()
 
 ---
@@ -58,10 +60,14 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 - [Métodos de solución de problemas de interpolación]() 
 1. [Interpolación Lineal]() 
       - [Ejemplo Interpolción Lineal]()
+
 2. [Interpolción Cuadrática]()
+      - [Ejemplo Interpolción Cuadrática]()
+      
 3. [Interpolción Newton]()
       - [Ejemplo Interpolción Newton]()
-4. [Interpolción Lagrange]()
+
+1. 4. [Interpolción Lagrange]()
       - [Ejemplo Interpolción Lagrange]()
  
  ---
