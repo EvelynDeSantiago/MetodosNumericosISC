@@ -30,7 +30,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 ## Tema 3 
 - [Definición de Sistema de ecuaciones lineales](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/2be7b08836d00f10e9444147aab2b2d28cc98455/Sistema%20de%20ecuaciones%20lineales?plain=1) 
 1. [Eliminación Gaussiana](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/c8de49cb483b8d1539861ac60ccf31f1f25b7a4b/Eliminaci%C3%B3n%20Gaussiana?plain=1) 
-      - [Ejemplos Eliminación Gaussiana]() 
+      - [Ejemplos Eliminación Gaussiana](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/addd28b29ffe4da462e02d0930d22f23d06536a3/Ejercicios%20eliminacion%20gaussiana?plain=1) 
      
 2. [Método de Gauss-Jordan]() 
       - [Ejemplo Método de Gauss-Jordan]() 
