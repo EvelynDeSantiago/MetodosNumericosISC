@@ -1,0 +1,65 @@
+using System;
+
+class Ejercicio2
+{
+    static void Main(string[] args)
+    {
+        double[][] A =
+        {
+            new double[] {10, -1, 2},
+            new double[] {-1, 11, -1},
+            new double[] {2, -1, 10}
+        };
+
+        double[] b = {6, 25, -11};
+
+        double[] solucion = Jacobi(A, b);
+
+        Console.WriteLine("------Resultado del sistema de ecuaciones:");
+        Console.WriteLine("La solución aproximada del sistema de ecuaciones es:");
+
+        for (int i = 0; i < solucion.Length; i++)
+        {
+            Console.WriteLine("x[" + i + "] = " + solucion[i].ToString("F4"));
+        }
+    }
+
+    static double[] Jacobi(double[][] A, double[] b)
+    {
+        int n = A.Length;
+
+        double[] x0 = new double[n];
+        double[] xNuevo = new double[n];
+
+        for (int k = 0; k < 50; k++)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                double suma = 0;
+
+                for (int j = 0; j < n; j++)
+                {
+                    if (j != i)
+                    {
+                        suma += A[i][j] * x0[j];
+                    }
+                }
+
+                xNuevo[i] = (b[i] - suma) / A[i][i];
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                x0[i] = xNuevo[i];
+            }
+        }
+
+        return x0;
+    }
+}
+
+------Resultado del sistema de ecuaciones:
+La solución aproximada del sistema de ecuaciones es:
+x[0] = 1.0433
+x[1] = 2.2692
+x[2] = -1.0817
