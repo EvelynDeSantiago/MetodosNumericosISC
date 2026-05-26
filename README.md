@@ -22,7 +22,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 3. [Metodo Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/23edc3a100c5ffbaf42f04dee3bc9850cf70feaa/M%C3%A9todo%20de%20Newton?plain=1)
    - [Ejemplos Metodo Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/6dd5c5486082d06b4cb5da739de7fb43c0b16da3/Ejercicios%20del%20m%C3%A9todo%20newton?plain=1)
 
-4. [Metodo de la Secante](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/533360b15ff80dd1e2382739f83d5817b0150da8/M%C3%A9todo%20de%20la%20secante?plain=1)
+4. [Metodo de la Secante](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/60d4ae583f9ae8ca220b331a84caafe50e36fef1/M%C3%A9todo%20de%20la%20secante?plain=1)
    - [Ejemplos Metodo de la Secante](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/b9e18137b314bb52392282c55b3bf15f14a83c99/Ejercicios%20del%20m%C3%A9todo%20de%20la%20secante?plain=1)
 
 ---
