@@ -33,7 +33,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
       - [Ejemplos Eliminación Gaussiana](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/addd28b29ffe4da462e02d0930d22f23d06536a3/Ejercicios%20eliminacion%20gaussiana?plain=1) 
      
 2. [Método de Gauss-Jordan](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/75ea4cbb28c53c8217814a7bb06c791ed4c06956/M%C3%A9todo%20Gasus_Jordan?plain=1) 
-      - [Ejemplo Método de Gauss-Jordan]() 
+      - [Ejemplo Método de Gauss-Jordan](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/af7d2bf5fccef5c8ec1ba2c47630ce8862e8507a/Ejercicios%20metodo%20gauss-jordan?plain=1) 
       
 3. [Método de Gauss-Seidel]() 
       - [Ejemplos Método de Gauss-Seidel]()  
