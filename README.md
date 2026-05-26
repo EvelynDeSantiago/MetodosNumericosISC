@@ -28,7 +28,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 ---
 
 ## Tema 3 
-- [Definición de Sistema de ecuaciones lineales]() 
+- [Definición de Sistema de ecuaciones lineales](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/2be7b08836d00f10e9444147aab2b2d28cc98455/Sistema%20de%20ecuaciones%20lineales?plain=1) 
 1. [Eliminación Gaussiana]() 
       - [Ejemplos Eliminación Gaussiana]() 
      
