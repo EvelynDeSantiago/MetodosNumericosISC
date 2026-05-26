@@ -1,0 +1,68 @@
+using System;
+
+class Gaussian3
+{
+    static void Main(string[] args)
+    {
+        double[][] A =
+        {
+            new double[] {1, 2, -1},
+            new double[] {3, -1, 2},
+            new double[] {2, 1, 1}
+        };
+
+        double[] b = {2, 9, 7};
+
+        double[] x = Resolver(A, b);
+
+        Console.WriteLine("----------Resultado del sistema de ecuaciones:");
+        Console.WriteLine("Solución del sistema de ecuaciones:");
+
+        for (int i = 0; i < x.Length; i++)
+        {
+            Console.WriteLine("x[" + i + "] = " + x[i]);
+        }
+    }
+
+    static double[] Resolver(double[][] A, double[] b)
+    {
+        int n = A.Length;
+
+        for (int k = 0; k < n - 1; k++)
+        {
+            for (int i = k + 1; i < n; i++)
+            {
+                double factor = A[i][k] / A[k][k];
+
+                for (int j = k; j < n; j++)
+                {
+                    A[i][j] -= factor * A[k][j];
+                }
+
+                b[i] -= factor * b[k];
+            }
+        }
+
+        double[] x = new double[n];
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            double suma = 0;
+
+            for (int j = i + 1; j < n; j++)
+            {
+                suma += A[i][j] * x[j];
+            }
+
+            x[i] = (b[i] - suma) / A[i][i];
+        }
+
+        return x;
+    }
+}
+
+----------Resultado del sistema de ecuaciones:
+Solución del sistema de ecuaciones:
+x[0] = 1
+x[1] = 2
+x[2] = 3
