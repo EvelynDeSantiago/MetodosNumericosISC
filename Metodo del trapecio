@@ -118,7 +118,7 @@ public class MetodoTrapecio {
 }
 ---------------------------------------------------------------------------------------------------------
 
-----------Salida en pantalla ------------------------
+----------Salida en pantalla ---------------------
 Ingrese la función f(x):
 4*x/(8*x*x)
 Ingrese el límite inferior 'a' de la integral:
