@@ -1,0 +1,57 @@
+using System;
+
+class Ejercicio3
+{
+    // Método para encontrar la raíz
+    public static double FindRoot(Func<double, double> funcion,
+                                  double x0,
+                                  double x1,
+                                  double tolerancia,
+                                  int maxIteraciones)
+    {
+        double x2 = 0;
+        int iteraciones = 0;
+
+        do
+        {
+            x2 = x1 - ((funcion(x1) * (x1 - x0)) /
+                  (funcion(x1) - funcion(x0)));
+
+            x0 = x1;
+            x1 = x2;
+
+            iteraciones++;
+
+        } while (Math.Abs(funcion(x2)) > tolerancia &&
+                 iteraciones < maxIteraciones);
+
+        return x2;
+    }
+
+    static void Main(string[] args)
+    {
+        // Definir la función
+        Func<double, double> funcion = x => x - Math.Exp(x) - 3 * x;
+
+        // Valores iniciales
+        double x0 = 0.5;
+        double x1 = 1.0;
+
+        // Tolerancia y máximo de iteraciones
+        double tolerancia = 0.0001;
+        int maxIteraciones = 1000;
+
+        // Encontrar la raíz
+        double raiz = FindRoot(funcion,
+                               x0,
+                               x1,
+                               tolerancia,
+                               maxIteraciones);
+
+        // Mostrar resultado
+        Console.WriteLine("Raíz encontrada: " + raiz);
+    }
+}
+
+
+-----------Resultado en pantalla: Raíz encontrada: -0.351724538552898
