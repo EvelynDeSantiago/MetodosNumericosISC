@@ -1,0 +1,39 @@
+using System;
+
+class Lagrange
+{
+    static double Interpolar(double[] x, double[] y, double valor)
+    {
+        double resultado = 0;
+        int n = x.Length;
+
+        for (int i = 0; i < n; i++)
+        {
+            double termino = y[i];
+
+            for (int j = 0; j < n; j++)
+            {
+                if (j != i)
+                {
+                    termino *= (valor - x[j]) / (x[i] - x[j]);
+                }
+            }
+
+            resultado += termino;
+        }
+
+        return resultado;
+    }
+
+    static void Main()
+    {
+        double[] x = { 1, 2, 4 };
+        double[] y = { 1, 8, 64 };
+
+        double resultado = Interpolar(x, y, 3);
+
+        Console.WriteLine("Valor interpolado: " + resultado);
+    }
+}
+
+-----------------------Valor interpolado: 31.5
