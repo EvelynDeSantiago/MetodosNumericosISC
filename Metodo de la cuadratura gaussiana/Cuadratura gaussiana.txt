@@ -1,0 +1,63 @@
+﻿----------------------- Cuadratura Gaussiana -------------------------------
+
+La cuadratura gaussiana es un método numérico utilizado para aproximar el valor de una integral definida.
+Este método mejora la precisión de otros métodos de integración utilizando puntos específicos llamados nodos y valores conocidos como pesos.
+
+La principal ventaja de la cuadratura gaussiana es que obtiene resultados muy precisos utilizando menos evaluaciones de la función.
+
+Se utiliza ampliamente en:
+
+Métodos numéricos
+Ingeniería
+Física
+Cálculo científico
+
+---------------------- Función -------------------------------
+
+La cuadratura gaussiana aproxima una integral de la forma:
+
+∫ab f(x) dx
+mediante una suma ponderada:
+
+∑ni =1 wi f(xi)
+
+Donde:
+
+xi son los nodos
+wi son los pesos
+f(x) es la función a integrar
+
+----------------------- Algoritmo -------------------------------
+Definir la función a integrar.
+Seleccionar el número de puntos de Gauss.
+Obtener los nodos y pesos correspondientes.
+Evaluar la función en cada nodo.
+Multiplicar cada evaluación por su peso.
+Sumar todos los resultados.
+Mostrar la aproximación de la integral.
+
+---------------- IMPLEMENTACIÓN EN JAVA ----------------
+public class CuadraturaGaussiana {
+
+    // Función a integrar
+    public static double f(double x) {
+        return Math.pow(x, 2);
+    }
+
+    public static void main(String[] args) {
+
+        // Nodos y pesos para Gauss-Legendre de 2 puntos
+        double x1 = -0.5773502692;
+        double x2 = 0.5773502692;
+
+        double w1 = 1.0;
+        double w2 = 1.0;
+
+        // Aplicación de la cuadratura gaussiana
+        double resultado = w1 * f(x1) + w2 * f(x2);
+
+        System.out.println("Resultado aproximado de la integral: " + resultado);
+    }
+}
+---------------- Salida en pantalla ----------------
+Resultado aproximado de la integral: 0.6666666666105352
