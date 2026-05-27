@@ -1,0 +1,24 @@
+using System;
+
+class CuadraturaGaussiana
+{
+    static double Funcion(double x)
+    {
+        return x * x;
+    }
+
+    static void Main()
+    {
+        double x1 = -0.5773502692;
+        double x2 = 0.5773502692;
+
+        double w1 = 1;
+        double w2 = 1;
+
+        double resultado = w1 * Funcion(x1) + w2 * Funcion(x2);
+
+        Console.WriteLine("Resultado aproximado: " + resultado);
+    }
+}
+
+Resultado aproximado: 0.6667
