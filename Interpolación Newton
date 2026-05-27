@@ -1,143 +1,86 @@
-----------Interpolación Newton-----------
-La interpolación de Newton es un método de interpolación polinómica que se utiliza para encontrar valores intermedios en datos ajustando funciones 
-adecuadas por tramos en puntos de datos adyacentes. Este método es útil para situaciones que requieran un número bajo de puntos para interpolar, ya que a
-medida que crece el número de puntos, también lo hace el grado del polinomio.
+----------------------- Interpolación de Newton -------------------------------
 
-----------Algoritmo--------------
-Interpolación de Newton:
-  Descripción: >
-    Un algoritmo para realizar la interpolación de Newton
-    utilizando diferencias divididas.
-  Entrada:
-    - Nombre: n
-      Descripción: Número de puntos de datos
-      Tipo: Entero
-    - Nombre: x
-      Descripción: Valores de x
-      Tipo: Lista de Flotantes
-    - Nombre: y
-      Descripción: Valores de y
-      Tipo: Lista de Flotantes
-    - Nombre: valorX
-      Descripción: Valor de x para interpolar
-      Tipo: Flotante
-  Salida:
-    - Nombre: resultado
-      Descripción: Resultado de la interpolación en valorX
-      Tipo: Flotante
-  Pasos:
-    1. Crear una tabla de diferencias divididas inicializada con ceros.
-    2. Calcular las diferencias divididas para cada orden.
-    3. Calcular el resultado interpolado utilizando las diferencias divididas.
-  Pasos Detallados:
-    1. Inicializar una tabla de diferencias divididas de tamaño n x n con ceros.
-    2. Para cada columna j de 0 a n-1:
-       a. Establecer la primera fila de la columna j igual a los valores de y.
-       b. Para cada fila i de 0 a n-j-1:
-            Calcular la diferencia dividida correspondiente utilizando la fórmula:
-            tablaDiferenciasDivididas[i][j] = (tablaDiferenciasDivididas[i + 1][j - 1] - tablaDiferenciasDivididas[i][j - 1]) / (x[i + j] - x[i]).
-    3. Calcular el resultado interpolado:
-       resultado = y[0]
-       Para cada i de 1 a n-1:
-           producto = 1.0
-           Para cada j de 0 a i-1:
-               producto *= (valorX - x[j])
-           resultado += tablaDiferenciasDivididas[0][i] * producto
-  Pseudocódigo: |
-    tablaDiferenciasDivididas = matriz de tamaño n x n inicializada con ceros
-    para cada columna j de 0 a n-1:
-        establecer la primera fila de la columna j igual a los valores de y
-        para cada fila i de 0 a n-j-1:
-            tablaDiferenciasDivididas[i][j] = (tablaDiferenciasDivididas[i + 1][j - 1] - tablaDiferenciasDivididas[i][j - 1]) / (x[i + j] - x[i])
-    resultado = y[0]
-    para cada i de 1 a n-1:
-        producto = 1.0
-        para cada j de 0 a i-1:
-            producto *= (valorX - x[j])
-        resultado += tablaDiferenciasDivididas[0][i] * producto
--------------------------------------------------------------------------------------------------
+La interpolación de Newton es un método numérico utilizado para aproximar valores desconocidos mediante un polinomio construido a partir de puntos conocidos.
+Este método utiliza diferencias divididas para formar el polinomio interpolante de manera sencilla y eficiente.
 
------------------------------IMPLEMENTACION EN JAVA-------------------------------------
-package internewton1;
+Una de sus principales ventajas es que permite agregar nuevos puntos sin recalcular completamente el polinomio.
 
-import java.util.Scanner;
+Se utiliza en:
 
-public class InterNewton1 {
+Métodos numéricos
+Análisis matemático
+Ingeniería
+Procesamiento de datos
 
-    public static void main(String[] args) 
-    {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Pedir al usuario el número de puntos de datos
-        System.out.print("Ingrese el número de puntos de datos: ");
-        int n = scanner.nextInt();
-        
-        // Arreglos para almacenar los valores de x e y
-        double[] x = new double[n];
-        double[] y = new double[n];
-        
-        // Pedir al usuario los valores de x e y
-        System.out.println("Ingrese los valores de x e y:");
-        for (int i = 0; i < n; i++) {
-            System.out.print("x[" + i + "]: ");
-            x[i] = scanner.nextDouble();
-            System.out.print("y[" + i + "]: ");
-            y[i] = scanner.nextDouble();
-        }
-        
-        // Pedir al usuario el valor de x para interpolar
-        System.out.print("Ingrese el valor de x para interpolar: ");
-        double valorX = scanner.nextDouble();
-        
-        // Calcular el resultado de la interpolación de Newton
-        double resultado = interpolacionNewton(x, y, valorX);
-        
-        System.out.println("El resultado de la interpolación en x=" + valorX + " es y=" + resultado);
-        
-        scanner.close();
-    }
-    
-    // Método para realizar la interpolación de Newton
-    public static double interpolacionNewton(double[] x, double[] y, double valorX) {
+----------------------- Función -------------------------------
+
+El polinomio de interpolación de Newton se expresa como:
+
+P(x) = f[x0] + f[x0,x1](x-x0) + f[x0,x1,x2](x-x0)(x-x1) + ... + f[x0,x1,...,xn](x-x0)(x-x1)...(x-xn-1)
+
+Donde:
+
+f[x0] son los valores conocidos
+f[x0,y1]son diferencias divididas
+x es el valor a interpolar
+
+----------------------- Algoritmo -------------------------------
+Ingresar los puntos conocidos (x,y).
+Calcular las diferencias divididas.
+Construir el polinomio de Newton.
+Sustituir el valor de x deseado.
+Obtener el valor interpolado.
+Mostrar el resultado.
+
+---------------- IMPLEMENTACIÓN EN JAVA ----------------
+public class InterpolacionNewton {
+
+    // Método para calcular interpolación de Newton
+    public static double interpolar(double[] x, double[] y, double valor) {
+
         int n = x.length;
-        double resultado = y[0];
-        double[][] tablaDiferenciasDivididas = new double[n][n];
-        
-        // Calcular las diferencias divididas
+        double[][] tabla = new double[n][n];
+
+        // Primera columna
         for (int i = 0; i < n; i++) {
-            tablaDiferenciasDivididas[i][0] = y[i];
+            tabla[i][0] = y[i];
         }
-        
+
+        // Diferencias divididas
         for (int j = 1; j < n; j++) {
             for (int i = 0; i < n - j; i++) {
-                tablaDiferenciasDivididas[i][j] = (tablaDiferenciasDivididas[i + 1][j - 1] - tablaDiferenciasDivididas[i][j - 1]) / (x[i + j] - x[i]);
+                tabla[i][j] = (tabla[i + 1][j - 1] - tabla[i][j - 1]) /
+                              (x[i + j] - x[i]);
             }
         }
-        
-        // Calcular el resultado interpolado
+
+        // Evaluación del polinomio
+        double resultado = tabla[0][0];
+
         for (int i = 1; i < n; i++) {
-            double producto = 1.0;
+            double termino = tabla[0][i];
+
             for (int j = 0; j < i; j++) {
-                producto *= (valorX - x[j]);
+                termino *= (valor - x[j]);
             }
-            resultado += tablaDiferenciasDivididas[0][i] * producto;
+
+            resultado += termino;
         }
-        
+
         return resultado;
     }
-    
-}
--------------------------------------------------------------------------
 
-------------------------Salida en pantalla---------------------------
-Ingrese el número de puntos de datos: 3
-Ingrese los valores de x e y:
-x[0]: -2
-y[0]: 1
-x[1]: -1
-y[1]: 0
-x[2]: 0
-y[2]: 1
-Ingrese el valor de x para interpolar: 2
-El resultado de la interpolación en x=2.0 es y=9.0
-------------------------------------------------------------------
+    public static void main(String[] args) {
+
+        double[] x = {1, 2, 3};
+        double[] y = {1, 4, 9};
+
+        double valor = 2.5;
+
+        double resultado = interpolar(x, y, valor);
+
+        System.out.println("Valor interpolado: " + resultado);
+    }
+}
+---------------- Salida en pantalla ----------------
+Valor interpolado: 6.25
