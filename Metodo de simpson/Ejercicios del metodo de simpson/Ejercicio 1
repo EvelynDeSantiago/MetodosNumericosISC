@@ -1,0 +1,36 @@
+using System;
+
+class Simpson
+{
+    static double Funcion(double x)
+    {
+        return Math.Pow(x, 2);
+    }
+
+    static double Simpson13(double a, double b, int n)
+    {
+        double h = (b - a) / n;
+        double suma = Funcion(a) + Funcion(b);
+
+        for (int i = 1; i < n; i++)
+        {
+            double x = a + i * h;
+
+            if (i % 2 == 0)
+                suma += 2 * Funcion(x);
+            else
+                suma += 4 * Funcion(x);
+        }
+
+        return (h / 3) * suma;
+    }
+
+    static void Main()
+    {
+        double resultado = Simpson13(0, 2, 100);
+
+        Console.WriteLine("Resultado aproximado: " + resultado);
+    }
+}
+
+--------------------------Resultado aproximado: 2.6667
