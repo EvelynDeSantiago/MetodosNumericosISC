@@ -11,7 +11,7 @@ Funcionamiento del Método
 
 La idea principal consiste en dividir el intervalo [a,b] en varios subintervalos iguales y aproximar la función mediante líneas rectas entre puntos consecutivos.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pasos del Algoritmo
 1. Definir la función
