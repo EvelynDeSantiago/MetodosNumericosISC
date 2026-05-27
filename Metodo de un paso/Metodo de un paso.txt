@@ -1,0 +1,81 @@
+﻿----------------------- Método de Un Paso -------------------------------
+
+Los métodos de un paso son técnicas numéricas utilizadas para resolver ecuaciones diferenciales ordinarias.
+Se llaman “de un paso” porque el cálculo del siguiente valor depende únicamente de la información del punto actual.
+
+Uno de los métodos de un paso más conocidos es el Método de Euler, utilizado para aproximar soluciones de ecuaciones diferenciales cuando no es posible obtener una solución exacta fácilmente.
+
+Estos métodos son muy utilizados en:
+
+Ingeniería
+Física
+Matemáticas aplicadas
+Simulación de procesos
+
+----------------------- Función -------------------------------
+
+Una ecuación diferencial ordinaria se representa como:
+
+dx=f(x,y)
+dy
+	​
+El método de un paso (Euler) utiliza la fórmula:
+
+yn+1=yn+h*f(xn,yn)
+
+Donde:
+
+h es el tamaño del paso
+xn es el valor actual
+yn es la solución actual
+yn+1 es la aproximación siguiente
+
+----------------------- Algoritmo -------------------------------
+Definir la ecuación diferencial f(x,y).
+Ingresar:
+Valor inicial de x
+Valor inicial de y
+Tamaño del paso h
+Número de iteraciones
+Aplicar la fórmula del método de Euler.
+Calcular el nuevo valor de y.
+Actualizar el valor de x.
+Repetir el proceso hasta completar las iteraciones.
+Mostrar los resultados obtenidos.
+
+---------------- IMPLEMENTACIÓN EN JAVA ----------------
+public class MetodoUnPaso {
+
+    // Ecuación diferencial dy/dx = x + y
+    public static double f(double x, double y) {
+        return x + y;
+    }
+
+    public static void main(String[] args) {
+
+        double x = 0;
+        double y = 1;
+
+        double h = 0.2;
+
+        int pasos = 5;
+
+        System.out.println("x\t y");
+
+        for (int i = 0; i < pasos; i++) {
+
+            y = y + h * f(x, y);
+
+            x = x + h;
+
+            System.out.println(x + "\t " + y);
+        }
+    }
+}
+---------------- Salida en pantalla ----------------
+x        y
+0.2      1.2
+0.4      1.48
+0.6      1.856
+0.8      2.3472
+1.0      2.97664
