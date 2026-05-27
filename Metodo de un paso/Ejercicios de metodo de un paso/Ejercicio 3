@@ -1,0 +1,31 @@
+using System;
+
+class MetodoUnPaso
+{
+    static double Funcion(double x, double y)
+    {
+        return x * y;
+    }
+
+    static void Main()
+    {
+        double x = 1;
+        double y = 1;
+        double h = 0.1;
+
+        for (int i = 0; i < 5; i++)
+        {
+            y = y + h * Funcion(x, y);
+            x = x + h;
+
+            Console.WriteLine("x = " + x + " y = " + y);
+        }
+    }
+}
+
+----------------Salida----------------
+x = 1.1 y = 1.1
+x = 1.2 y = 1.221
+x = 1.3 y = 1.36752
+x = 1.4 y = 1.5452976
+x = 1.5 y = 1.761639264
