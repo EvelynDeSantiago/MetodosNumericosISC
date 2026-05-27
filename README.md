@@ -78,7 +78,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 1. [Métodos de un paso](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5ea7301a1df987065dd3a5de2df39086f467a18b/Metodo%20de%20un%20paso/Metodo%20de%20un%20paso.txt?plain=1#L81C1-L81C17) 
       - [Ejemplo Métodos de un paso](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/4857956030c02f77a9d9a5d0bbad83596fbd6c2e/Metodo%20de%20un%20paso/Ejercicios%20de%20metodo%20de%20un%20paso?plain=1)
 
-2. [Método de pasos múltiples]() 
+2. [Método de pasos múltiples](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/79eac63f99acb7106dc7c1670ed2c400b89374ea/M%C3%A9todos%20de%20pasos%20multiples?plain=1#L105C1-L105C27) 
       - [EjemploMétodo de pasos múltiples]()
 
 
