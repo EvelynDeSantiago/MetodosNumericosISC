@@ -62,7 +62,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
       - [Ejemplo Interpolción Lineal](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/18c98ba73b2e3c4bd4e10228fd72d6ec65188a24/Ejercicios%20Interpolaci%C3%B3n%20lineal?plain=1)
 
 2. [Interpolción Cuadrática](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/f1ffcb553a8b9b00ea7f84cd72534dc498b52c4a/Interpolaci%C3%B3n%20cuadr%C3%A1tica/Interpolaci%C3%B3n%20Cuadr%C3%A1tica.txt?plain=1#L74C1-L74C24)
-      - [Ejemplo Interpolción Cuadrática]()
+      - [Ejemplo Interpolción Cuadrática](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5b966e7817bf9ca852286451483eab386bd45c28/Interpolaci%C3%B3n%20cuadr%C3%A1tica/Ejercicios%20de%20interpolaci%C3%B3n%20cuadr%C3%A1tica?plain=1)
       
 3. [Interpolción Newton]()
       - [Ejemplo Interpolción Newton]()
