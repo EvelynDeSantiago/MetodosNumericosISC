@@ -67,7 +67,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 3. [Interpolción Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/1a5707f3d9a0766c446534aba609e73a3365228d/Interpolaci%C3%B3n%20Newton?plain=1#L86C1-L86C24)
       - [Ejemplo Interpolción Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/38ea8e3b434f1b142e6d783f8565aa2950fbfd51/Ejercicios%20de%20interpolaci%C3%B3n%20newton?plain=1)
 
-4. [Interpolción Lagrange]()
+4. [Interpolción Lagrange](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/1b442115456a5a1a3ddd3644d6f62882bf6ca77e/Interpolaci%C3%B3n%20lagrange?plain=1)
       - [Ejemplo Interpolción Lagrange]()
  
  ---
