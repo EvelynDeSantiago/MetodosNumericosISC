@@ -57,7 +57,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 ---
 
 ## Tema 5
-- [Métodos de solución de problemas de interpolación]() 
+- [Métodos de solución de problemas de interpolación](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/faa527eeb6ec91712ddd3c485d648f6cd8b10410/M%C3%A9todos%20de%20soluci%C3%B3n%20de%20problemas%20de%20interpolaci%C3%B3n?plain=1#L10C1-L10C52) 
 1. [Interpolación Lineal]() 
       - [Ejemplo Interpolción Lineal]()
 
