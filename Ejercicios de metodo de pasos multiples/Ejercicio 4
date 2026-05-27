@@ -1,0 +1,50 @@
+using System;
+
+class AdamsBashforth
+{
+    static double F(double x, double y)
+    {
+        return Math.Sin(x) + y;
+    }
+
+    static void Main()
+    {
+        double h = 0.1;
+
+        double[] x = new double[6];
+        double[] y = new double[6];
+
+        x[0] = 0;
+        y[0] = 1;
+
+        for (int i = 1; i < 4; i++)
+        {
+            x[i] = x[i - 1] + h;
+            y[i] = y[i - 1] + h * F(x[i - 1], y[i - 1]);
+        }
+
+        for (int i = 3; i < 5; i++)
+        {
+            x[i + 1] = x[i] + h;
+
+            y[i + 1] = y[i] + (h / 24.0) *
+                (55 * F(x[i], y[i])
+                - 59 * F(x[i - 1], y[i - 1])
+                + 37 * F(x[i - 2], y[i - 2])
+                - 9 * F(x[i - 3], y[i - 3]));
+        }
+
+        for (int i = 0; i < 6; i++)
+        {
+            Console.WriteLine("x = " + x[i] + " y = " + y[i]);
+        }
+    }
+}
+
+----------------Salida----------------
+x = 0 y = 1
+x = 0.1 y = 1.1
+x = 0.2 y = 1.21998334166468
+x = 0.3 y = 1.36184815541415
+x = 0.4 y = 1.52992678142254
+x = 0.5 y = 1.73043863024239
