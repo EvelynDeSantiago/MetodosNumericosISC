@@ -1,69 +1,58 @@
------------------------interpolación lineal-------------------------------
-La interpolación lineal es un método numérico y gráfico que permite encontrar datos desconocidos entre otros datos ya conocidos. Consiste en trazar una 
-línea recta que pasa por dos puntos conocidos y calcular los valores intermedios según esta recta.
+ï»¿----------------------- InterpolaciÃ³n Lineal -------------------------------
 
----------------ALGORITMO------------------------
-Algoritmo Interpolación Lineal:
+La interpolaciÃ³n lineal es una tÃ©cnica matemÃ¡tica utilizada para estimar valores intermedios entre dos puntos conocidos.
+Este mÃ©todo supone que los datos siguen un comportamiento lineal, por lo que se utiliza una lÃ­nea recta para aproximar el valor desconocido.
+Es uno de los mÃ©todos mÃ¡s sencillos y rÃ¡pidos de interpolaciÃ³n, ademÃ¡s de ser muy Ãºtil en cÃ¡lculos numÃ©ricos y anÃ¡lisis de datos.
 
-  Inicio:
-    - Solicitar al usuario los puntos conocidos (x0, y0) y (x1, y1)
-    - Solicitar al usuario el valor de x para interpolar (x)
-    - Calcular la interpolación lineal:
-      - Calcular la pendiente (m) entre los puntos conocidos:
-        m = (y1 - y0) / (x1 - x0)
-      - Calcular el valor de y interpolado utilizando la fórmula:
-        y = y0 + m * (x - x0)
-    - Mostrar el valor interpolado de y para x
---------------------------------------------------
+----------------------- Algoritmo -------------------------------
+Ingresar dos puntos conocidos:
+(x0, y0)
+(x1,y1)
+Ingresar el valor de x que se desea interpolar.
+Calcular la pendiente:
+m = (y1âˆ’y0)/(x1âˆ’x0)
+Calcular el valor interpolado:
+y = y0 + m * (x - x0)
+Mostrar el resultado obtenido.
 
-----------IMPLEMENTACIÓN EN JAVA -------------------
-import java.util.Scanner;
+---------------- IMPLEMENTACIÃ“N EN C# ----------------
+using System;
 
-public class InterpolacionLineal {
-    
-    // Método para calcular la interpolación lineal
-    public static double interpolacionLineal(double x0, double y0, double x1, double y1, double x) {
+class InterpolacionLineal
+{
+    static double Interpolar(double x0, double y0,
+                              double x1, double y1,
+                              double x)
+    {
         return y0 + ((y1 - y0) / (x1 - x0)) * (x - x0);
     }
-    
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Solicitar los puntos conocidos
-        System.out.println("Ingresa el primer punto conocido (x0, y0):");
-        System.out.print("x0: ");
-        double x0 = scanner.nextDouble();
-        System.out.print("y0: ");
-        double y0 = scanner.nextDouble();
-        
-        System.out.println("Ingresa el segundo punto conocido (x1, y1):");
-        System.out.print("x1: ");
-        double x1 = scanner.nextDouble();
-        System.out.print("y1: ");
-        double y1 = scanner.nextDouble();
-        
-        // Solicitar el valor de x para interpolar
-        System.out.print("Ingresa el valor de x para interpolar: ");
-        double x = scanner.nextDouble();
-        
-        // Calcular la interpolación lineal
-        double y = interpolacionLineal(x0, y0, x1, y1, x);
-        
-        // Mostrar el resultado
-        System.out.println("El valor interpolado de y para x=" + x + " es: " + y);
-        
-        scanner.close();
+
+    static void Main()
+    {
+        Console.Write("Ingrese x0: ");
+        double x0 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese y0: ");
+        double y0 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese x1: ");
+        double x1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese y1: ");
+        double y1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese el valor de x: ");
+        double x = Convert.ToDouble(Console.ReadLine());
+
+        double resultado = Interpolar(x0, y0, x1, y1, x);
+
+        Console.WriteLine("Valor interpolado: " + resultado);
     }
 }
------------------------------------------------------------------------------
-
-------------Salida en pantalla--------------
-Ingresa el primer punto conocido (x0, y0):
-x0: 1
-y0: 0
-Ingresa el segundo punto conocido (x1, y1):
-x1: 6
-y1: 1.7918
-Ingresa el valor de x para interpolar: 2
-El valor interpolado de y para x=2.0 es: 0.35836
---------------------------------------------------
+---------------- Salida en pantalla ----------------
+Ingrese x0: 2
+Ingrese y0: 4
+Ingrese x1: 6
+Ingrese y1: 12
+Ingrese el valor de x: 4
+Valor interpolado: 8
