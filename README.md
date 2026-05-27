@@ -58,7 +58,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 ## Tema 5
 - [Métodos de solución de problemas de interpolación](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/faa527eeb6ec91712ddd3c485d648f6cd8b10410/M%C3%A9todos%20de%20soluci%C3%B3n%20de%20problemas%20de%20interpolaci%C3%B3n?plain=1#L10C1-L10C52) 
-1. [Interpolación Lineal]() 
+1. [Interpolación Lineal](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/f299bbb724b32aa2f6fe661b0900ba26a6845b7d/Interpolaci%C3%B3n%20lineal?plain=1#L58C1-L58C21) 
       - [Ejemplo Interpolción Lineal]()
 
 2. [Interpolción Cuadrática]()
