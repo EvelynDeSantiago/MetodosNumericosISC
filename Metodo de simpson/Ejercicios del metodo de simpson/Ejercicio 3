@@ -1,0 +1,36 @@
+using System;
+
+class Simpson
+{
+    static double Funcion(double x)
+    {
+        return Math.Cos(x);
+    }
+
+    static double Simpson38(double a, double b, int n)
+    {
+        double h = (b - a) / n;
+        double suma = Funcion(a) + Funcion(b);
+
+        for (int i = 1; i < n; i++)
+        {
+            double x = a + i * h;
+
+            if (i % 3 == 0)
+                suma += 2 * Funcion(x);
+            else
+                suma += 3 * Funcion(x);
+        }
+
+        return (3 * h / 8) * suma;
+    }
+
+    static void Main()
+    {
+        double resultado = Simpson38(0, Math.PI / 2, 99);
+
+        Console.WriteLine("Resultado aproximado: " + resultado);
+    }
+}
+
+------------------------------Resultado aproximado: 1.0000
