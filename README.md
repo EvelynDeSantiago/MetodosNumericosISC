@@ -48,7 +48,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 1. [Método de trapecio](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/7d4347bd373eba44bddb079e0660fc12e00300c9/Metodo%20del%20trapecio/Metodo%20del%20trapecio.txt?plain=1) 
       - [Ejemplos Método de trapecio](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/dde4fe579280f92176096575917902a42b506b91/Metodo%20del%20trapecio/Ejercicios%20del%20metodo%20de%20trapecio?plain=1) 
 
-2. [Método de Simpson](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/51a9276b2e738a187387967580e50196108a0119/Metodo%20de%20simpson/Ejercicios%20del%20metodo%20de%20simpson/Ejercicio%205?plain=1#L192C1-L192C29) 
+2. [Método de Simpson](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/b54ab7552fa0d8806749da8747a6c661d2423dd9/Metodo%20de%20simpson/M%C3%A9todo%20de%20simpson.txt?plain=1#L192C1-L192C29) 
       - [Ejemplos Método de Simpson]() 
 
 3. [Método de la Cuadratura Gaussiana]()  
