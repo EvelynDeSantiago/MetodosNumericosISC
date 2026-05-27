@@ -1,0 +1,36 @@
+using System;
+
+class MetodoTrapecio
+{
+    static double Funcion(double x)
+    {
+        return Math.Sin(x);
+    }
+
+    static double Trapecio(double a, double b, int n)
+    {
+        double h = (b - a) / n;
+        double suma = (Funcion(a) + Funcion(b)) / 2;
+
+        for (int i = 1; i < n; i++)
+        {
+            double x = a + i * h;
+            suma += Funcion(x);
+        }
+
+        return h * suma;
+    }
+
+    static void Main()
+    {
+        double a = 0;
+        double b = Math.PI;
+        int n = 100;
+
+        double resultado = Trapecio(a, b, n);
+
+        Console.WriteLine("El resultado de la integral aproximada es: " + resultado);
+    }
+}
+
+---------------------El resultado de la integral aproximada es: 1.9998
