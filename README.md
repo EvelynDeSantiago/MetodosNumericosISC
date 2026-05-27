@@ -64,7 +64,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 2. [Interpolción Cuadrática](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/f1ffcb553a8b9b00ea7f84cd72534dc498b52c4a/Interpolaci%C3%B3n%20cuadr%C3%A1tica/Interpolaci%C3%B3n%20Cuadr%C3%A1tica.txt?plain=1#L74C1-L74C24)
       - [Ejemplo Interpolción Cuadrática](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5b966e7817bf9ca852286451483eab386bd45c28/Interpolaci%C3%B3n%20cuadr%C3%A1tica/Ejercicios%20de%20interpolaci%C3%B3n%20cuadr%C3%A1tica?plain=1)
       
-3. [Interpolción Newton]()
+3. [Interpolción Newton](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/1a5707f3d9a0766c446534aba609e73a3365228d/Interpolaci%C3%B3n%20Newton?plain=1#L86C1-L86C24)
       - [Ejemplo Interpolción Newton]()
 
 1. 4. [Interpolción Lagrange]()
