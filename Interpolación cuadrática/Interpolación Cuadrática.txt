@@ -1,0 +1,74 @@
+----------------------- Interpolación Cuadrática -------------------------------
+
+La interpolación cuadrática es un método numérico que permite estimar valores desconocidos utilizando una función polinómica de segundo grado.
+Este método emplea tres puntos conocidos para construir una parábola que pase exactamente por dichos puntos y así calcular valores intermedios.
+
+La interpolación cuadrática ofrece mayor precisión que la interpolación lineal cuando los datos presentan curvaturas.
+
+----------------------- Función -------------------------------
+
+La interpolación cuadrática se basa en un polinomio de segundo grado:
+
+P(x)=ax2+bx+c
+
+También puede expresarse mediante el método de Lagrange:
+
+p(x)=y0L0(x)+y1L1(x)+y2L2(x)
+
+----------------------- Algoritmo -------------------------------
+Ingresar tres puntos conocidos:
+(x0, y0)
+(x1, y1)
+(x2, y2)
+Ingresar el valor de x a interpolar.
+Calcular los polinomios de Lagrange.
+Sustituir los valores en la fórmula de interpolación.
+Obtener el valor aproximado de y.
+Mostrar el resultado.
+
+---------------- IMPLEMENTACIÓN EN JAVA ----------------
+public class InterpolacionCuadratica {
+
+    // Método de interpolación cuadrática de Lagrange
+    public static double interpolar(double x0, double y0,
+                                    double x1, double y1,
+                                    double x2, double y2,
+                                    double x) {
+
+        double L0 = ((x - x1) * (x - x2)) /
+                    ((x0 - x1) * (x0 - x2));
+
+        double L1 = ((x - x0) * (x - x2)) /
+                    ((x1 - x0) * (x1 - x2));
+
+        double L2 = ((x - x0) * (x - x1)) /
+                    ((x2 - x0) * (x2 - x1));
+
+        return (y0 * L0) + (y1 * L1) + (y2 * L2);
+    }
+
+    public static void main(String[] args) {
+
+        double x0 = 1;
+        double y0 = 1;
+
+        double x1 = 2;
+        double y1 = 4;
+
+        double x2 = 3;
+        double y2 = 9;
+
+        double x = 2.5;
+
+        double resultado = interpolar(
+                x0, y0,
+                x1, y1,
+                x2, y2,
+                x
+        );
+
+        System.out.println("Valor interpolado: " + resultado);
+    }
+}
+---------------- Salida en pantalla ----------------
+Valor interpolado: 6.25
