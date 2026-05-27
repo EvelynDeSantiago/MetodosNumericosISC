@@ -1,35 +1,53 @@
------------------Método de trapecio---------------------
-El método del trapecio es un método numérico para calcular aproximaciones numéricas de integrales definidas. La técnica consiste en dividir el intervalo total 
-en intervalos pequeños y aproximar la curva Y = f(X) en los diversos intervalos pequeños mediante alguna curva más simple cuya integral puede calcularse utilizando
-solamente las ordenadas de los puntos extremos de los intervalos. 
---------------------------------------------------------------------
+ï»¿MÃ©todo del Trapecio
 
-----------Algoritmo---------------------------
-Método_del_Trapecio:
-  Descripción: 
-    El Método del Trapecio es una técnica de integración numérica que aproxima el valor de una integral definida mediante la suma de áreas de trapecios formados
-debajo de la curva de la función.
-  Paso_a_Paso:
-    - Paso_1: 
-        Definir la función f(x) que se desea integrar en el intervalo [a, b].
-    - Paso_2: 
-        Especificar el límite inferior 'a' y el límite superior 'b' del intervalo de integración.
-    - Paso_3: 
-        Especificar el número de subintervalos 'n' en los que se dividirá el intervalo [a, b]. Cuanto mayor sea 'n', más precisa será la aproximación.
-    - Paso_4: 
-        Calcular el ancho de cada subintervalo h = (b - a) / n.
-    - Paso_5: 
-        Calcular los valores de la función en los extremos de los subintervalos: f(a), f(a + h), f(a + 2h), ..., f(b).
-    - Paso_6: 
-        Sumar todas las áreas de los trapecios formados por los subintervalos utilizando la fórmula:
-        Área = h * (f(a) + 2 * f(a + h) + 2 * f(a + 2h) + ... + f(b)) / 2
-    - Paso_7: 
-        El resultado de la integral aproximada es la suma de todas las áreas calculadas en el paso anterior.
-------------------------------------------------------------------------------------------------------------------
+El mÃ©todo del trapecio es una tÃ©cnica numÃ©rica empleada para estimar el valor de integrales definidas.
+Este procedimiento aproxima el Ã¡rea bajo una curva reemplazando pequeÃ±os segmentos de la funciÃ³n por trapecios, cuya Ã¡rea puede calcularse de forma sencilla.
 
------IMPLEMENTACIÓN EN JAVA-------------------
+La precisiÃ³n del mÃ©todo depende del nÃºmero de divisiones utilizadas en el intervalo de integraciÃ³n; mientras mÃ¡s subintervalos existan, mejor serÃ¡ la aproximaciÃ³n obtenida.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Funcionamiento del MÃ©todo
+
+La idea principal consiste en dividir el intervalo [a,b] en varios subintervalos iguales y aproximar la funciÃ³n mediante lÃ­neas rectas entre puntos consecutivos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pasos del Algoritmo
+1. Definir la funciÃ³n
+
+Se establece la funciÃ³n matemÃ¡tica que se desea integrar.
+
+2. Determinar el intervalo
+
+Se indican los lÃ­mites inferior y superior de integraciÃ³n.
+
+3. Elegir el nÃºmero de subintervalos
+
+El intervalo total se divide en pequeÃ±as partes iguales.
+
+4. Calcular el ancho de cada divisiÃ³n
+
+Se obtiene el valor de:
+
+h= bâˆ’a / n
+
+5. Evaluar la funciÃ³n
+
+Se calculan los valores de la funciÃ³n en cada punto del intervalo.
+
+6. Aplicar la fÃ³rmula del trapecio
+
+Se suman las Ã¡reas aproximadas de todos los trapecios generados.
+
+7. Obtener el resultado
+
+La suma final representa una aproximaciÃ³n numÃ©rica de la integral definida.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ImplementaciÃ³n en Java
 package metodotrapecio;
-
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
@@ -39,94 +57,108 @@ import java.util.function.Function;
 
 public class MetodoTrapecio {
 
-    public static double metodoTrapecio(Function<Double, Double> f, double a, double b, int n) {
+    // MÃ©todo principal del trapecio
+    public static double metodoTrapecio(Function<Double, Double> f,
+                                        double a,
+                                        double b,
+                                        int n) {
+
         double h = (b - a) / n;
-        double suma = 0.5 * (f.apply(a) + f.apply(b)); // Sumamos los extremos
+        double suma = 0.5 * (f.apply(a) + f.apply(b));
 
         for (int i = 1; i < n; i++) {
+
             double x = a + i * h;
+
             suma += f.apply(x);
         }
- 
+
         return h * suma;
     }
 
-    public static double richardsonExtrapolation(Function<Double, Double> f, double a, double b, int n) {
-        double h = (b - a) / n;
-        double hBy2 = h / 2;
-        double suma1 = 0.5 * (f.apply(a) + f.apply(b));
-        double suma2 = 0.0;
+    // ExtrapolaciÃ³n de Richardson
+    public static double richardson(Function<Double, Double> f,
+                                    double a,
+                                    double b,
+                                    int n) {
 
-        for (int i = 1; i < n; i++) {
-            double x = a + i * h;
-            suma2 += f.apply(x + hBy2);
-        }
+        double resultado =
+                (4.0 * metodoTrapecio(f, a, b, n * 2)
+                - metodoTrapecio(f, a, b, n)) / 3.0;
 
-        double resultN = h * (suma1 + suma2);
-        double resultNBy4 = (4.0 * metodoTrapecio(f, a, b, n * 2) - metodoTrapecio(f, a, b, n)) / 3.0;
-        return resultNBy4;
+        return resultado;
     }
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese la función f(x):");
-        String funcionStr = scanner.nextLine();
+        System.out.println("Ingrese la funciÃ³n f(x):");
+        String funcionTexto = scanner.nextLine();
 
-        Function<Double, Double> funcion = x -> {
-            // Evaluamos la función para un valor específico de x
-            return evaluarFuncion(funcionStr, x);
-        };
+        Function<Double, Double> funcion = x ->
+                evaluarFuncion(funcionTexto, x);
 
-        System.out.println("Ingrese el límite inferior 'a' de la integral:");
+        System.out.println("Ingrese el lÃ­mite inferior:");
         double a = scanner.nextDouble();
 
-        System.out.println("Ingrese el límite superior 'b' de la integral:");
+        System.out.println("Ingrese el lÃ­mite superior:");
         double b = scanner.nextDouble();
 
-        System.out.println("Ingrese el número inicial de subintervalos 'n':");
+        System.out.println("Ingrese el nÃºmero de subintervalos:");
         int n = scanner.nextInt();
 
-        double resultado = richardsonExtrapolation(funcion, a, b, n);
-        System.out.println("El resultado de la integral aproximada es: " + resultado);
+        double resultado = richardson(funcion, a, b, n);
+
+        System.out.println("Resultado aproximado de la integral:");
+        System.out.println(resultado);
 
         scanner.close();
     }
 
-    // Función para evaluar una expresión matemática dada una cadena y un valor de x
-    private static double evaluarFuncion(String funcionStr, double x) {
-        // Remplazamos x en la función y evaluamos el resultado
-        return evaluarExpresion(funcionStr.replace("x", Double.toString(x)));
+    // Evaluar funciÃ³n reemplazando x
+    public static double evaluarFuncion(String funcion, double x) {
+
+        String expresion = funcion.replace("x",
+                            Double.toString(x));
+
+        return evaluarExpresion(expresion);
     }
 
-    // Función para evaluar una expresión matemática dada una cadena
-    private static double evaluarExpresion(String expresion) {
-        try {
-            // Creamos un motor de script
-            ScriptEngineManager manager = new ScriptEngineManager();
-            ScriptEngine engine = manager.getEngineByName("JavaScript");
+    // Evaluar expresiÃ³n matemÃ¡tica
+    public static double evaluarExpresion(String expresion) {
 
-            // Evaluamos la expresión
-            Object result = engine.eval(expresion);
-            return Double.parseDouble(result.toString());
+        try {
+
+            ScriptEngineManager manager =
+                    new ScriptEngineManager();
+
+            ScriptEngine engine =
+                    manager.getEngineByName("JavaScript");
+
+            Object resultado = engine.eval(expresion);
+
+            return Double.parseDouble(resultado.toString());
         } catch (ScriptException e) {
-            // Manejamos cualquier error de evaluación de la expresión
-            System.out.println("Error al evaluar la función: " + e.getMessage());
-            return 0.0;
+
+            System.out.println("Error al evaluar la expresiÃ³n");
+
+            return 0;
         }
     }
 }
----------------------------------------------------------------------------------------------------------
 
-----------Salida en pantalla ---------------------
-Ingrese la función f(x):
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ejemplo de EjecuciÃ³n
+Ingrese la funciÃ³n f(x):
 4*x/(8*x*x)
-Ingrese el límite inferior 'a' de la integral:
+Ingrese el lÃ­mite inferior:
 3
-Ingrese el límite superior 'b' de la integral:
+Ingrese el lÃ­mite superior:
 5
-Ingrese el número inicial de subintervalos 'n':
+Ingrese el nÃºmero de subintervalos:
 100
-El resultado de la integral aproximada es: 0.25541281188478643
-------------------------------------------------------------------------
-
+Resultado aproximado de la integral:
+0.25541281188478643
