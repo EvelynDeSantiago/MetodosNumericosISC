@@ -45,7 +45,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
  ---
 
  ## Tema 4 
-1. [Método de trapecio](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d121951d6c6a4648b23d693a15d58a54dd25dc22/.editorconfig?plain=1) 
+1. [Método de trapecio](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/7d4347bd373eba44bddb079e0660fc12e00300c9/Metodo%20del%20trapecio/Metodo%20del%20trapecio.txt?plain=1) 
       - [Ejemplos Método de trapecio]() 
 
 1. 2. [Método de Simpson]() 
