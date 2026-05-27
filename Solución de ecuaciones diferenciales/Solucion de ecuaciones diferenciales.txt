@@ -1,0 +1,83 @@
+﻿----------------------- Solución de Ecuaciones Diferenciales -------------------------------
+
+La solución de ecuaciones diferenciales consiste en encontrar una función que satisfaga una relación entre una variable y sus derivadas.
+Las ecuaciones diferenciales se utilizan para modelar fenómenos físicos, matemáticos e ingenieriles como:
+
+Movimiento
+Crecimiento poblacional
+Circuitos eléctricos
+Transferencia de calor
+
+Uno de los métodos numéricos más utilizados para resolver ecuaciones diferenciales es el Método de Euler.
+
+----------------------- Función -------------------------------
+
+Una ecuación diferencial ordinaria puede expresarse como:
+
+dx​=f(x,y)
+dy
+	
+
+El método de Euler utiliza la fórmula:
+
+yn+1=yn+h*f(xn,yn)
+
+Donde:
+
+h es el tamaño del paso
+Xn y Yn son valores conocidos
+yn+1 es el valor aproximado siguiente
+
+----------------------- Algoritmo -------------------------------
+Definir la ecuación diferencial f(x,y).
+Ingresar:
+Valor inicial x0
+Valor inicial y0
+Tamaño del paso h
+Número de iteraciones
+Aplicar la fórmula de Euler.
+Calcular los nuevos valores de x y y.
+Repetir el proceso hasta completar las iteraciones.
+Mostrar los resultados obtenidos.
+
+---------------- IMPLEMENTACIÓN EN JAVA ----------------
+public class MetodoEuler {
+
+    // Ecuación diferencial dy/dx = x + y
+    public static double f(double x, double y) {
+        return x + y;
+    }
+
+    public static void main(String[] args) {
+
+        double x = 0;
+        double y = 1;
+
+        double h = 0.1;
+
+        int pasos = 10;
+
+        System.out.println("x\t y");
+
+        for (int i = 0; i < pasos; i++) {
+
+            y = y + h * f(x, y);
+
+            x = x + h;
+
+            System.out.println(x + "\t " + y);
+        }
+    }
+}
+---------------- Salida en pantalla ----------------
+x        y
+0.1      1.1
+0.2      1.2200000000000002
+0.3      1.362
+0.4      1.5282
+0.5      1.72102
+0.6      1.943122
+0.7      2.1974342
+0.8      2.48717762
+0.9      2.815895382
+1.0      3.1874849202
