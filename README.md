@@ -75,7 +75,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 ## Tema 6
 - [Solución de ecuaciones diferenciales](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/aeeee6add63da17b8013d3c583758d6e7ecaac79/Soluci%C3%B3n%20de%20ecuaciones%20diferenciales/Solucion%20de%20ecuaciones%20diferenciales.txt?plain=1#L83C1-L83C22) 
 
-1. [Métodos de un paso]() 
+1. [Métodos de un paso](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5ea7301a1df987065dd3a5de2df39086f467a18b/Metodo%20de%20un%20paso/Metodo%20de%20un%20paso.txt?plain=1#L81C1-L81C17) 
       - [Ejemplo Métodos de un paso]()
 
 2. [Método de pasos múltiples]() 
