@@ -51,7 +51,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 2. [Método de Simpson](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/b54ab7552fa0d8806749da8747a6c661d2423dd9/Metodo%20de%20simpson/M%C3%A9todo%20de%20simpson.txt?plain=1#L192C1-L192C29) 
       - [Ejemplos Método de Simpson](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/a7bf73075f8104636e2c4117eb869fe8dc7ffc94/Metodo%20de%20simpson/Ejercicios%20del%20metodo%20de%20simpson?plain=1) 
 
-3. [Método de la Cuadratura Gaussiana]()  
+3. [Método de la Cuadratura Gaussiana](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/3ee8792fa299d89c02a8c88c63b879d9824189dc/Metodo%20de%20la%20cuadratura%20gaussiana/Cuadratura%20gaussiana.txt?plain=1)  
       - [Ejemplos Método de la Cuadratura Gaussiana]()
 
 ---
