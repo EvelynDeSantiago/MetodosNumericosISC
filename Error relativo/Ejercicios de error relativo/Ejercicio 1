@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double valorReal = 50;
+        double valorAproximado = 48;
+
+        double errorRelativo = Math.Abs((valorReal - valorAproximado) / valorReal);
+
+        Console.WriteLine("Valor real: " + valorReal);
+        Console.WriteLine("Valor aproximado: " + valorAproximado);
+        Console.WriteLine("Error relativo: " + errorRelativo);
+    }
+}
+
+------------------------Salida en pantalla------------------------------------------
+
+Valor real: 50
+Valor aproximado: 48
+Error relativo: 0.04
