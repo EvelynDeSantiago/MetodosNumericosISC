@@ -2,10 +2,25 @@
 
 En este repositorio se encuentra información acerca de lo mas relevante de metodos numericos asi como ejercicios y ejemplos.
 
+---
+
 # Introduccion
 
 - [Definicion Metodos Numericos y para que sirven](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/136173944c5256726f97671462ea63d6625ad2eb/Que%20es%20metodos%20numericos%20y%20para%20que%20sirve?plain=1)
 - [Funcion](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/aafa8c9455a4b16a326091e0bd6f7e6498447d82/Que%20es%20una%20funcion?plain=1)
+
+---
+
+# Tema 1
+
+- [Definición de error]()
+- [Tipos de error]()
+- [Error absoluto]()
+- [Error relativo]()
+- [Error porcentual]()
+- [Error de redondeo]()
+- [Error de truncamiento]()
+- [Error de precisión]()
 
 ---
 

@@ -1,0 +1,79 @@
+﻿Error en Métodos Numéricos
+
+Un error en métodos numéricos es la diferencia que existe entre el valor exacto de un problema matemático y el valor aproximado obtenido mediante cálculos numéricos.
+
+Se produce porque las computadoras y los métodos matemáticos trabajan con aproximaciones y con una cantidad limitada de cifras decimales.
+
+La expresión general del error es:
+
+Error=∣Valor exacto−Valor aproximado∣
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Por qué aparecen los errores?
+
+Los errores aparecen por diferentes razones:
+
+Uso de aproximaciones matemáticas.
+Redondeo de números decimales.
+Truncamiento de cifras.
+Limitaciones de precisión de la computadora.
+Aplicación de métodos iterativos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Funcionamiento
+
+En métodos numéricos normalmente no siempre se obtiene el resultado exacto, sino un valor cercano al real.
+
+Por ejemplo:
+
+Valor exacto:
+
+π=3.14159265
+
+Valor aproximado:
+
+3.14
+
+Entonces el error es:
+
+∣3.14159265−3.14∣=0.00159265
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Importancia del error
+
+El análisis del error permite:
+
+Saber qué tan precisa es una solución.
+Comparar métodos numéricos.
+Mejorar aproximaciones.
+Determinar si un resultado es confiable.
+Tipos principales de errores
+Error absoluto
+Error relativo
+Error porcentual
+Error de redondeo
+Error de truncamiento
+Error de precisión
+Error de propagación
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Implementaión en java
+public class ErrorNumerico {
+
+    public static void main(String[] args) {
+
+        double valorExacto = 3.141592;
+        double valorAproximado = 3.14;
+
+        double error =
+                Math.abs(valorExacto - valorAproximado);
+
+        System.out.println("Error numerico: " + error);
+    }
+}
+Resultado esperado
+Error numerico: 0.0015920000000000373
+rror en métodos numéricos es la diferencia entre el valor exacto y el valor aproximado obtenido al resolver un problema matemático mediante procedimientos numéricos.
