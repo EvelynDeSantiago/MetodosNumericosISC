@@ -1,0 +1,11 @@
+﻿Tipos de errores en Métodos Numéricos
+
+1. ¿Qué son los errores en métodos numéricos?
+
+En métodos numéricos, un error es la diferencia entre el valor real o exacto y el valor aproximado obtenido mediante cálculos numéricos.
+
+Se representan así:
+
+Error=∣Valor exacto−Valor aproximado∣
+
+Los errores aparecen porque las computadoras trabajan con cantidades limitadas de cifras y porque muchos métodos utilizan aproximaciones.
