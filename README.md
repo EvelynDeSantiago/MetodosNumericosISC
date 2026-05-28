@@ -30,7 +30,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
      - [Ejemplos de error redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9c9c2b97daf73f9fb43fe16d4225d8dd2914476f/Error%20de%20redondeo/Ejercicios%20de%20error%20de%20redondeo?plain=1)
 
 5. - [Error de truncamiento]()
-     - [Ejemplos de error truncamiento]()
+     - [Ejemplos de error truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e06cd4a6647e5b03de6effac903a6a8142d7a42c/Error%20de%20truncamiento/Ejercicios%20de%20error%20de%20truncamiento?plain=1)
 
 6. - [Error de precisión]()
      - [Ejemplos de error percisión]()
