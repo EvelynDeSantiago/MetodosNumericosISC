@@ -14,12 +14,19 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 # Tema 1
 
 - [Definición de error](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/564a47d1c4ce3b58186464d8b66e71d82fd3f0f9/Definici%C3%B3n%20de%20error?plain=1#L79C1-L79C166)
-- [Tipos de error]()
+
+- [Tipos de error](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/fc6705e33c0e843447de1b8ebf410cf647f5c38e/Tipos%20de%20error?plain=1#L11C1-L11C138)
+
 - [Error absoluto]()
+
 - [Error relativo]()
+
 - [Error porcentual]()
+
 - [Error de redondeo]()
+
 - [Error de truncamiento]()
+
 - [Error de precisión]()
 
 ---
