@@ -1,0 +1,54 @@
+﻿Error Absoluto
+
+¿Qué es?
+
+Es la diferencia absoluta entre el valor exacto y el valor aproximado.
+
+-------------------------------------------------------------------------
+
+Funcionamiento
+
+Mide cuánto se aleja el resultado calculado del valor real.
+
+Fórmula
+
+Ea=∣Ve−Va
+
+Donde:
+
+Ve= valor exacto
+Va= valor aproximado
+
+Ejemplo
+
+Valor exacto: 3.1416
+Valor aproximado: 3.14
+
+Ea=∣3.1416−3.14∣=0.0016
+
+--------------------------------------------------------------------------
+
+Algoritmo
+Leer valor exacto.
+Leer valor aproximado.
+Restar ambos valores.
+Aplicar valor absoluto.
+Mostrar resultado.
+
+---------------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorAbsoluto {
+    public static void main(String[] args) {
+
+        double valorExacto = 3.1416;
+        double valorAprox = 3.14;
+
+        double error = Math.abs(valorExacto - valorAprox);
+
+        System.out.println("Error absoluto: " + error);
+    }
+}
+
+------------------Salidda en pantalla-----------
+Error absoluto: 0.001599999999999998238
