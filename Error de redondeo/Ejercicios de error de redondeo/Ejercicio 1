@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double numero = 5.6789;
+        double redondeado = Math.Round(numero, 2);
+
+        double errorRedondeo = Math.Abs(numero - redondeado);
+
+        Console.WriteLine("Número original: " + numero);
+        Console.WriteLine("Número redondeado: " + redondeado);
+        Console.WriteLine("Error de redondeo: " + errorRedondeo);
+    }
+}
+
+-----------------------------Salida en pantalla------------------------------------------
+
+Número original: 5.6789
+Número redondeado: 5.68
+Error de redondeo: 0.0011
