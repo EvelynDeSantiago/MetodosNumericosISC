@@ -1,1 +1,21 @@
 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double numero = 7.85643;
+        double truncado = Math.Truncate(numero * 1000) / 1000;
+
+        double errorTruncamiento = Math.Abs(numero - truncado);
+
+        Console.WriteLine("Número original: " + numero);
+        Console.WriteLine("Número truncado: " + truncado);
+        Console.WriteLine("Error de truncamiento: " + errorTruncamiento);
+    }
+}
+
+Número original: 7.85643
+Número truncado: 7.856
+Error de truncamiento: 0.000430000000000375
