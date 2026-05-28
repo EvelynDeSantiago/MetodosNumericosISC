@@ -1,0 +1,47 @@
+﻿3. Error Relativo
+¿Qué es?
+
+Es el error absoluto dividido entre el valor exacto.
+
+--------------------------------------------------------------------------
+
+Funcionamiento
+
+Indica qué tan grande es el error respecto al tamaño real del número.
+
+Fórmula
+
+Er=∣Ve∣∣Ve−Va∣
+	​
+
+
+Ejemplo
+Er= 3.1416∣3.1416−3.14∣
+Er=0.000509
+
+---------------------------------------------------------------------------
+
+Algoritmo
+Calcular error absoluto.
+Dividir entre el valor exacto.
+Mostrar resultado.
+
+---------------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorRelativo {
+    public static void main(String[] args) {
+
+        double exacto = 3.1416;
+        double aproximado = 3.14;
+
+        double errorRelativo =
+                Math.abs(exacto - aproximado) / exacto;
+
+        System.out.println("Error relativo: " + errorRelativo);
+    }
+}
+
+------------------salida------------------
+
+Error relativo: 5.092958179999999E-4
