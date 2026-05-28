@@ -21,7 +21,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
      - [Ejemplos de error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/488148cd9b0dadbec8ae0692ccb4f31e9c0ebb56/Error%20absoluto/Ejercicios%20de%20error%20absoluto?plain=1)
 
 2. - [Error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/7bd87b4d3d6fb97cc91d3180debc5fc815ee718d/Error%20relativo/Error%20relativo.txt?plain=1)
-     - [Ejemplos de error relativo]()
+     - [Ejemplos de error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/78e0e4d5f6758cf488eaab810a58228bf9defd76/Error%20relativo/Ejercicios%20de%20error%20relativo?plain=1)
 
 3. - [Error porcentual]()
      - [Ejemplos de error porcentual]()
