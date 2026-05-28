@@ -17,17 +17,23 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 - [Tipos de error](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/fc6705e33c0e843447de1b8ebf410cf647f5c38e/Tipos%20de%20error?plain=1#L11C1-L11C138)
 
-- [Error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/73945c0393d649d183e5ae85b4b1289844bed0d3/Error%20absoluto/Error%20absoluto.txt?plain=1#L54C1-L54C40)
+1. - [Error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/73945c0393d649d183e5ae85b4b1289844bed0d3/Error%20absoluto/Error%20absoluto.txt?plain=1#L54C1-L54C40)
+     - [Ejemplos de error absoluto]()
 
-- [Error relativo]()
+2. - [Error relativo]()
+     - [Ejemplos de error relativo]()
 
-- [Error porcentual]()
+3. - [Error porcentual]()
+     - [Ejemplos de error porcentual]()
 
-- [Error de redondeo]()
+4. - [Error de redondeo]()
+     - [Ejemplos de error redondeo]()
 
-- [Error de truncamiento]()
+5. - [Error de truncamiento]()
+     - [Ejemplos de error truncamiento]()
 
-- [Error de precisión]()
+6. - [Error de precisión]()
+     - [Ejemplos de error percisión]()
 
 ---
 
