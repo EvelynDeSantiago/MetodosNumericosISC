@@ -1,0 +1,46 @@
+﻿Error de Precisión
+¿Qué es?
+
+Se produce porque las computadoras almacenan números con cantidad limitada de bits.
+
+--------------------------------------------------------------------------------------   
+
+Funcionamiento
+
+Algunos números no pueden representarse exactamente en memoria.
+
+Ejemplo:
+
+0.1+0.2
+
+=0.3
+
+En Java:
+
+System.out.println(0.1 + 0.2);
+
+Resultado:
+
+0.30000000000000004
+
+---------------------------------------------------------------------------------------
+
+Algoritmo
+Realizar operación decimal.
+Comparar con valor esperado.
+Observar diferencia.
+
+---------------------------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorPrecision {
+    public static void main(String[] args) {
+
+        double a = 0.1;
+        double b = 0.2;
+
+        double suma = a + b;
+
+        System.out.println("Resultado: " + suma);
+    }
+}
