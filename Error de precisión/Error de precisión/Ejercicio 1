@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double numeroExacto = 10.123456;
+        float numeroPrecision = (float)numeroExacto;
+
+        double errorPrecision = Math.Abs(numeroExacto - numeroPrecision);
+
+        Console.WriteLine("Número exacto: " + numeroExacto);
+        Console.WriteLine("Número con menor precisión: " + numeroPrecision);
+        Console.WriteLine("Error de precisión: " + errorPrecision);
+    }
+}
+
+---------------------------------Salida en pantalla------------------------------------------
+
+Número exacto: 10.123456
+Número con menor precisión: 10.12346
+Error de precisión: 2.48901367180878E-07
