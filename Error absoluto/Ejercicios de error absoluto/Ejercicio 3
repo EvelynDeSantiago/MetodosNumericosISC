@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double valorReal = 75.45;
+        double valorAproximado = 74.95;
+
+        double errorAbsoluto = Math.Abs(valorReal - valorAproximado);
+
+        Console.WriteLine("Valor real: " + valorReal);
+        Console.WriteLine("Valor aproximado: " + valorAproximado);
+        Console.WriteLine("Error absoluto: " + errorAbsoluto);
+    }
+}
+
+------------------salida en pantalla----------------
+
+Valor real: 75.45
+Valor aproximado: 74.95
+Error absoluto: 0.5
