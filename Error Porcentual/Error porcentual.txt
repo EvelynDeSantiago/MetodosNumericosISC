@@ -1,0 +1,44 @@
+Error Porcentual
+¿Qué es?
+
+Es el error relativo multiplicado por 100.
+
+------------------------------------------------------------------------
+
+Funcionamiento
+
+Permite expresar el error en porcentaje.
+
+Fórmula
+
+Ep=Er×100
+
+Ejemplo
+Ep=0.000509×100
+Ep=0.0509%
+
+------------------------------------------------------------------------
+
+Algoritmo
+Calcular error relativo.
+Multiplicar por 100.
+Mostrar porcentaje.
+
+---------------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorPorcentual {
+    public static void main(String[] args) {
+
+        double exacto = 3.1416;
+        double aproximado = 3.14;
+
+        double error =
+                (Math.abs(exacto - aproximado) / exacto) * 100;
+
+        System.out.println("Error porcentual: " + error + "%");
+    }
+}
+-------------------Salida en pantalla--------------------------------------
+
+Error porcentual: 0.050929462694162965%
