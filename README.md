@@ -17,7 +17,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 - [Tipos de error](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/fc6705e33c0e843447de1b8ebf410cf647f5c38e/Tipos%20de%20error?plain=1#L11C1-L11C138)
 
-- [Error absoluto]()
+- [Error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/73945c0393d649d183e5ae85b4b1289844bed0d3/Error%20absoluto/Error%20absoluto.txt?plain=1#L54C1-L54C40)
 
 - [Error relativo]()
 
