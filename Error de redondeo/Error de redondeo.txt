@@ -1,0 +1,55 @@
+﻿Error de Redondeo
+¿Qué es?
+
+Sucede cuando un número se aproxima eliminando cifras decimales.
+
+----------------------------------------------------------------------
+
+Funcionamiento
+
+La computadora guarda números con cierta cantidad de dígitos.
+
+Ejemplo:
+
+3.141592≈3.14
+Ejemplo
+
+Valor exacto: 3.141592
+Valor redondeado: 3.14
+
+Error:
+
+∣3.141592−3.14∣=0.001592
+
+------------------------------------------------------------------------
+
+Algoritmo
+Tomar un número decimal.
+Reducir cifras decimales.
+Calcular diferencia.
+
+-------------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorRedondeo {
+    public static void main(String[] args) {
+
+        double numero = 3.141592;
+
+        double redondeado =
+                Math.round(numero * 100.0) / 100.0;
+
+        double error =
+                Math.abs(numero - redondeado);
+
+        System.out.println("Numero original: " + numero);
+        System.out.println("Numero redondeado: " + redondeado);
+        System.out.println("Error: " + error);
+    }
+}
+
+-------------------Salida en pantalla------------------------------------------
+
+Numero original: 3.141592
+Numero redondeado: 3.14
+Error: 0.0015920000000000378
