@@ -18,22 +18,28 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 - [Tipos de error](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/fc6705e33c0e843447de1b8ebf410cf647f5c38e/Tipos%20de%20error?plain=1#L11C1-L11C138)
 
 1. - [Error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/73945c0393d649d183e5ae85b4b1289844bed0d3/Error%20absoluto/Error%20absoluto.txt?plain=1#L54C1-L54C40)
-     - [Ejemplos de error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/488148cd9b0dadbec8ae0692ccb4f31e9c0ebb56/Error%20absoluto/Ejercicios%20de%20error%20absoluto?plain=1)
+    
+      - [Ejemplos de error absoluto](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/488148cd9b0dadbec8ae0692ccb4f31e9c0ebb56/Error%20absoluto/Ejercicios%20de%20error%20absoluto?plain=1)
 
 2. - [Error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/7bd87b4d3d6fb97cc91d3180debc5fc815ee718d/Error%20relativo/Error%20relativo.txt?plain=1)
-     - [Ejemplos de error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/78e0e4d5f6758cf488eaab810a58228bf9defd76/Error%20relativo/Ejercicios%20de%20error%20relativo?plain=1)
+    
+      - [Ejemplos de error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/78e0e4d5f6758cf488eaab810a58228bf9defd76/Error%20relativo/Ejercicios%20de%20error%20relativo?plain=1)
 
 3. - [Error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/28bf6982079c404adf9e5fb64090a7e726df03ab/Error%20Porcentual/Error%20porcentual.txt?plain=1#L44C1-L44C40)
-     - [Ejemplos de error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/ee6b1e820ce879e532723d1090ed096c7d2061d3/Error%20Porcentual/Ejercicios%20de%20error%20porcentusl?plain=1)
+     
+      - [Ejemplos de error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/ee6b1e820ce879e532723d1090ed096c7d2061d3/Error%20Porcentual/Ejercicios%20de%20error%20porcentusl?plain=1)
 
 4. - [Error de redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/22e451500456e3e3fe061e390ea45a0ea6d5dd4a/Error%20de%20redondeo/Error%20de%20redondeo.txt?plain=1)
-     - [Ejemplos de error redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9c9c2b97daf73f9fb43fe16d4225d8dd2914476f/Error%20de%20redondeo/Ejercicios%20de%20error%20de%20redondeo?plain=1)
+     
+      - [Ejemplos de error redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9c9c2b97daf73f9fb43fe16d4225d8dd2914476f/Error%20de%20redondeo/Ejercicios%20de%20error%20de%20redondeo?plain=1)
 
 5. - [Error de truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9d697380d1d92e1b385e8d199f8ff52b232640ff/Error%20de%20truncamiento/Error%20de%20truncamiento.txt?plain=1)
-     - [Ejemplos de error truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e06cd4a6647e5b03de6effac903a6a8142d7a42c/Error%20de%20truncamiento/Ejercicios%20de%20error%20de%20truncamiento?plain=1)
+     
+      - [Ejemplos de error truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e06cd4a6647e5b03de6effac903a6a8142d7a42c/Error%20de%20truncamiento/Ejercicios%20de%20error%20de%20truncamiento?plain=1)
 
 6. - [Error de precisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5ca9caa558285c7ee8e34aaa698ec11b7f7f45d9/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n.txt?plain=1)
-     - [Ejemplos de error percisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d447ed83bd27568a0d318134b3e0ed23c48fc41d/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n?plain=1)
+     
+      - [Ejemplos de error percisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d447ed83bd27568a0d318134b3e0ed23c48fc41d/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n?plain=1)
 
 ---
 
