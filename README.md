@@ -23,7 +23,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 2. - [Error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/7bd87b4d3d6fb97cc91d3180debc5fc815ee718d/Error%20relativo/Error%20relativo.txt?plain=1)
      - [Ejemplos de error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/78e0e4d5f6758cf488eaab810a58228bf9defd76/Error%20relativo/Ejercicios%20de%20error%20relativo?plain=1)
 
-3. - [Error porcentual]()
+3. - [Error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/28bf6982079c404adf9e5fb64090a7e726df03ab/Error%20Porcentual/Error%20porcentual.txt?plain=1#L44C1-L44C40)
      - [Ejemplos de error porcentual]()
 
 4. - [Error de redondeo]()
