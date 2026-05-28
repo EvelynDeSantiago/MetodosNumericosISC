@@ -24,7 +24,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
      - [Ejemplos de error relativo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/78e0e4d5f6758cf488eaab810a58228bf9defd76/Error%20relativo/Ejercicios%20de%20error%20relativo?plain=1)
 
 3. - [Error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/28bf6982079c404adf9e5fb64090a7e726df03ab/Error%20Porcentual/Error%20porcentual.txt?plain=1#L44C1-L44C40)
-     - [Ejemplos de error porcentual]()
+     - [Ejemplos de error porcentual](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/ee6b1e820ce879e532723d1090ed096c7d2061d3/Error%20Porcentual/Ejercicios%20de%20error%20porcentusl?plain=1)
 
 4. - [Error de redondeo]()
      - [Ejemplos de error redondeo]()
