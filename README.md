@@ -32,7 +32,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 5. - [Error de truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9d697380d1d92e1b385e8d199f8ff52b232640ff/Error%20de%20truncamiento/Error%20de%20truncamiento.txt?plain=1)
      - [Ejemplos de error truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e06cd4a6647e5b03de6effac903a6a8142d7a42c/Error%20de%20truncamiento/Ejercicios%20de%20error%20de%20truncamiento?plain=1)
 
-6. - [Error de precisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/b6f8fe66eef335baf38056e0f2b6febad6a7a0fd/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n.txt?plain=1#L28C1-L28C10)
+6. - [Error de precisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/4ef95e6fa7a42cdc42a346f61782e51c68d9389d/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n.txt?plain=1)
      - [Ejemplos de error percisión]()
 
 ---
