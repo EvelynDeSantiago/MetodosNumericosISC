@@ -1,0 +1,49 @@
+﻿Error de Truncamiento
+¿Qué es?
+
+Ocurre cuando se eliminan cifras decimales sin redondear.
+-------------------------------------------------------------------
+
+Funcionamiento
+
+Simplemente se cortan los decimales sobrantes.
+
+Ejemplo:
+
+3.141592→3.14
+Diferencia con redondeo
+Redondeo: aproxima.
+Truncamiento: corta directamente.
+Ejemplo
+∣3.141592−3.14∣=0.001592
+
+--------------------------------------------------------------------
+
+Algoritmo
+Tomar un número.
+Cortar decimales.
+Calcular diferencia.
+
+--------------------------------------------------------------------
+
+Implementación en Java
+public class ErrorTruncamiento {
+    public static void main(String[] args) {
+
+        double numero = 3.141592;
+
+        double truncado =
+                ((int)(numero * 100)) / 100.0;
+
+        double error =
+                Math.abs(numero - truncado);
+
+        System.out.println("Numero truncado: " + truncado);
+        System.out.println("Error: " + error);
+    }
+}
+
+-------------------Salida en pantalla------------------------------------------
+
+Numero truncado: 3.14
+Error: 0.0015920000000000378
