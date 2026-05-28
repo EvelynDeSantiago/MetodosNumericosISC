@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double valorReal = 80;
+        double valorAproximado = 76;
+
+        double errorPorcentual = (Math.Abs(valorReal - valorAproximado) / valorReal) * 100;
+
+        Console.WriteLine("Valor real: " + valorReal);
+        Console.WriteLine("Valor aproximado: " + valorAproximado);
+        Console.WriteLine("Error porcentual: " + errorPorcentual + "%");
+    }
+}
+
+---------------------------Salida en pantalla------------------------------------------
+
+Valor real: 80
+Valor aproximado: 76
+Error porcentual: 5%
