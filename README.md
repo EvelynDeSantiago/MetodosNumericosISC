@@ -29,7 +29,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 4. - [Error de redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/22e451500456e3e3fe061e390ea45a0ea6d5dd4a/Error%20de%20redondeo/Error%20de%20redondeo.txt?plain=1)
      - [Ejemplos de error redondeo](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9c9c2b97daf73f9fb43fe16d4225d8dd2914476f/Error%20de%20redondeo/Ejercicios%20de%20error%20de%20redondeo?plain=1)
 
-5. - [Error de truncamiento]()
+5. - [Error de truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/9d697380d1d92e1b385e8d199f8ff52b232640ff/Error%20de%20truncamiento/Error%20de%20truncamiento.txt?plain=1)
      - [Ejemplos de error truncamiento](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/e06cd4a6647e5b03de6effac903a6a8142d7a42c/Error%20de%20truncamiento/Ejercicios%20de%20error%20de%20truncamiento?plain=1)
 
 6. - [Error de precisión]()
