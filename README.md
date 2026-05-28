@@ -39,7 +39,7 @@ En este repositorio se encuentra información acerca de lo mas relevante de meto
 
 6. - [Error de precisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/5ca9caa558285c7ee8e34aaa698ec11b7f7f45d9/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n.txt?plain=1)
      
-      - [Ejemplos de error percisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d447ed83bd27568a0d318134b3e0ed23c48fc41d/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n?plain=1)
+      - [Ejemplos de error precisión](https://github.com/EvelynDeSantiago/MetodosNumericosISC/blob/d447ed83bd27568a0d318134b3e0ed23c48fc41d/Error%20de%20precisi%C3%B3n/Error%20de%20precisi%C3%B3n?plain=1)
 
 ---
 
